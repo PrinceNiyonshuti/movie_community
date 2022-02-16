@@ -16,9 +16,19 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('index');
 });
-Route::get('/movies', function () {
-    return view('moviesList');
+
+Route::prefix('/movies')->group(function () {
+    Route::get('', function () {
+        return view('moviesList');
+    });
+    Route::get('/single', function () {
+        return view('movieSingle');
+    });
+    Route::get('/series', function () {
+        return view('movieSeries');
+    });
 });
+
 Route::get('/news', function () {
     return view('news');
 });
