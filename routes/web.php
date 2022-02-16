@@ -29,9 +29,19 @@ Route::prefix('/movies')->group(function () {
     });
 });
 
-Route::get('/news', function () {
-    return view('news');
+Route::prefix('/news')->group(function () {
+    Route::get('', function () {
+        return view('news');
+    });
+    Route::get('/single', function () {
+        return view('newsSingle');
+    });
+    Route::get('/series', function () {
+        return view('movieSeries');
+    });
 });
+
+
 Route::get('/community', function () {
     return view('community');
 });
