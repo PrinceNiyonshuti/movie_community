@@ -34,6 +34,9 @@ Route::middleware('auth')->prefix('/movie')->group(function () {
     Route::get('', [MovieController::class, 'index']);
     Route::get('/new', [MovieController::class, 'create']);
     Route::post('/store', [MovieController::class, 'store']);
+    Route::get('/{movie}/edit', [MovieController::class, 'edit']);
+    Route::patch('/{movie}', [MovieController::class, 'update']);
+    Route::delete('/{movie}', [MovieController::class, 'destroy']);
 });
 
 
