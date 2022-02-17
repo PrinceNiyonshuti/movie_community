@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\MovieController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -23,27 +24,22 @@ Route::post('/register', [AuthController::class, 'register'])->middleware('guest
 Route::post('/login', [AuthController::class, 'login'])->middleware('guest');
 Route::post('/logout', [AuthController::class, 'destroy'])->middleware('auth');
 
-
-
-
 Route::middleware('auth')->prefix('/account')->group(function () {
     Route::get('', [DashboardController::class, 'index']);
     Route::get('/profile', [DashboardController::class, 'create']);
 });
 
-Route::prefix('/movies')->group(function () {
-    Route::get('', function () {
-        return view('moviesList');
-    });
-    Route::get('/single', function () {
-        return view('movieSingle');
-    });
+// Movie actions
+Route::middleware('auth')->prefix('/movie')->group(function () {
+    Route::get('', [MovieController::class, 'index']);
+    Route::get('/new', [MovieController::class, 'create']);
+    Route::post('/store', [MovieController::class, 'store']);
 });
 
 
-Route::prefix('/movie')->group(function () {
+Route::prefix('/movies')->group(function () {
     Route::get('', function () {
-        return view('movie.index');
+        return view('moviesList');
     });
     Route::get('/single', function () {
         return view('movieSingle');

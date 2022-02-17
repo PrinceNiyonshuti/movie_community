@@ -1069,7 +1069,6 @@ output {
   color: #555555;
 }
 select,
-textarea,
 input[type="text"],
 input[type="password"],
 input[type="datetime"],
@@ -1088,6 +1087,25 @@ input[type="color"],
   display: block;
   width: 100%;
   height: 34px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555555;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #aaa;
+  -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+  -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+  transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+  -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s 0.3s ease-out;
+  -moz-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s 0.3s ease-out;
+  -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s 0.3s ease-out;
+  transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s 0.3s ease-out;
+}
+textarea{
+    display: block;
+  width: 100%;
+  height: 304px;
   padding: 6px 12px;
   font-size: 14px;
   line-height: 1.42857143;
@@ -2704,6 +2722,9 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 }
 .alert-info .alert-link {
   color: #245269;
+}
+.text-danger{
+    color: red;
 }
 .alert-warning {
   background-color: #fcf8e3;

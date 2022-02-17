@@ -20,7 +20,7 @@
                 <x-sideBar />
                 <div class="col-md-9 col-sm-12 col-xs-12">
                     <div style="margin-bottom: 30px;">
-                        <p><a href="/movie/create" class="redbtn">Add Movie</a></p>
+                        <p><a href="/movie/new" class="redbtn">Add Movie</a></p>
 
                     </div>
                     <div class="flex-wrap-movielist user-fav-list">

@@ -14,7 +14,7 @@ class MovieController extends Controller
      */
     public function index()
     {
-        //
+        return view('movie.index');
     }
 
     /**
@@ -24,7 +24,7 @@ class MovieController extends Controller
      */
     public function create()
     {
-        //
+        return view('movie.create');
     }
 
     /**
@@ -35,7 +35,23 @@ class MovieController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $attributes = $request->validate([
+            'genre_id' => 'required',
+            'name' => 'required|unique:movies',
+            'description' => 'required|min:10',
+            'released_date' => 'required',
+            'director' => 'required',
+            'writer' => 'required',
+            'thumbnail' => 'required|image',
+            'alternative_video' => 'required'
+        ]);
+
+        // dd($attributes);
+        // get user id
+        $attributes['user_id'] = auth()->id();
+        $attributes['thumbnail'] = request()->file('thumbnail')->store('thumbnails');
+        Movie::create($attributes);
+        return back()->with('success', 'Movie saved successfully!');
     }
 
     /**
