@@ -35,6 +35,10 @@ class MovieController extends Controller
         // get user id
         $attributes['user_id'] = auth()->id();
         $attributes['thumbnail'] = request()->file('thumbnail')->store('thumbnails');
+        if (isset($request['video'])) {
+            $attributes['video'] = request()->file('video')->store('videos');
+        }
+
         Movie::create($attributes);
         return back()->with('success', 'Movie saved successfully!');
     }
@@ -64,6 +68,9 @@ class MovieController extends Controller
             $existingMovie->alternative_video = $request['alternative_video'];
             if (isset($request['thumbnail'])) {
                 $existingMovie->thumbnail = $request->file('thumbnail')->store('thumbnails');
+            }
+            if (isset($request['video'])) {
+                $attributes['video'] = request()->file('video')->store('videos');
             }
             $existingMovie->save();
         }

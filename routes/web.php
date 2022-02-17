@@ -27,6 +27,7 @@ Route::post('/logout', [AuthController::class, 'destroy'])->middleware('auth');
 Route::middleware('auth')->prefix('/account')->group(function () {
     Route::get('', [DashboardController::class, 'index']);
     Route::get('/profile', [DashboardController::class, 'create']);
+
 });
 
 // Movie actions
@@ -44,6 +45,7 @@ Route::prefix('/movies')->group(function () {
     Route::get('', function () {
         return view('moviesList');
     });
+    Route::get('/{movie:name}', [DashboardController::class, 'show']);
     Route::get('/single', function () {
         return view('movieSingle');
     });

@@ -37,8 +37,25 @@
                                         <img src="/storage/{{ $movie->thumbnail }}" width="80%" alt="">
                                     </div>
                                     <label>Cover</label>
-                                    <input type="file" name="thumbnail" value="{{ $movie->thumbnail }}" >
+                                    <input type="file" name="thumbnail" value="{{ $movie->thumbnail }}">
                                     @error('thumbnail')
+                                    <p class="text-danger">{{ $message }}</p>
+                                    @enderror
+
+                                    @if ($movie->video)
+                                    <label>Recent Video</label>
+                                    <div class="movie-item-style-2">
+                                        <video width="100%" height="200" controls>
+                                            <source src="/storage/{{ $movie->video }}" type="video/mp4">
+                                            <source src="movie.ogg" type="video/ogg">
+                                            Your browser does not support the video tag.
+                                        </video>
+                                    </div>
+                                    @endif
+
+                                    <label>Video</label>
+                                    <input type="file" name="video" value="{{ $movie->video }}">
+                                    @error('video')
                                     <p class="text-danger">{{ $message }}</p>
                                     @enderror
 

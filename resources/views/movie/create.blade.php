@@ -37,6 +37,12 @@
                                     <p class="text-danger">{{ $message }}</p>
                                     @enderror
 
+                                    <label>Video</label>
+                                    <input type="file" name="video" value="{{ old('video') }}">
+                                    @error('video')
+                                    <p class="text-danger">{{ $message }}</p>
+                                    @enderror
+
                                     <label>Alternative Video</label>
                                     <input type="text" name="alternative_video" value="{{ old('alternative_video') }}" placeholder="Alternative Video link" required>
                                     @error('alternative_video')
