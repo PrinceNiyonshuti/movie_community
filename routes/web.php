@@ -4,6 +4,8 @@ use App\Http\Controllers\AuthController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\GuestController;
 use App\Http\Controllers\MovieController;
+use App\Models\Movie;
+use App\Models\User;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -18,7 +20,10 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('index');
+    return view('index', [
+        'movies' => Movie::latest()->get(),
+        'members' => User::latest()->get(),
+    ]);
 });
 
 Route::post('/register', [AuthController::class, 'register'])->middleware('guest');
@@ -28,7 +33,6 @@ Route::post('/logout', [AuthController::class, 'destroy'])->middleware('auth');
 Route::middleware('auth')->prefix('/account')->group(function () {
     Route::get('', [DashboardController::class, 'index']);
     Route::get('/profile', [DashboardController::class, 'create']);
-
 });
 
 // Movie actions
@@ -43,9 +47,6 @@ Route::middleware('auth')->prefix('/movie')->group(function () {
 
 
 Route::prefix('/movies')->group(function () {
-    Route::get('', function () {
-        return view('moviesList');
-    });
     Route::get('', [GuestController::class, 'index']);
     Route::get('/{movie:name}', [GuestController::class, 'show']);
 });
