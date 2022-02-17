@@ -24,24 +24,22 @@ Route::prefix('/movies')->group(function () {
     Route::get('/single', function () {
         return view('movieSingle');
     });
-    Route::get('/series', function () {
-        return view('movieSeries');
+});
+
+Route::prefix('/account')->group(function () {
+    Route::get('', function () {
+        return view('account.index');
+    });
+    Route::get('/profile', function () {
+        return view('account.profile');
     });
 });
 
-Route::prefix('/news')->group(function () {
+Route::prefix('/movie')->group(function () {
     Route::get('', function () {
-        return view('news');
+        return view('movie.index');
     });
     Route::get('/single', function () {
-        return view('newsSingle');
+        return view('movieSingle');
     });
-    Route::get('/series', function () {
-        return view('movieSeries');
-    });
-});
-
-
-Route::get('/community', function () {
-    return view('community');
 });
