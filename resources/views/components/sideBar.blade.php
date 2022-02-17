@@ -1,7 +1,12 @@
 <div class="col-md-3 col-sm-12 col-xs-12">
     <div class="user-information">
         <div class="user-img">
-            <a href="#"><img src="{{asset('images/uploads/user-img.png')}}" alt=""><br></a>
+            @if (Auth::user()->avatar)
+            <a href="#"><img src="/storage/{{ Auth::user()->avatar }}" alt="{{ Auth::user()->username }}" width="120"><br></a>
+            @else
+            <a href="#"><img src="{{asset('images/uploads/user-img.png')}}" alt="{{ Auth::user()->username }}"><br></a>
+            @endif
+
             <a href="#" class="redbtn">{{ Auth::user()->username }}</a>
         </div>
         <div class="user-fav">

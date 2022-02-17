@@ -93,7 +93,7 @@
                             @foreach ($members as $member)
                             <div class="celeb-item">
                                 @if ($member->avatar)
-                                <p>Joker</p>
+                                <a href="#"><img src="/storage/{{ $member->avatar }}" alt="" width="70" height="70"></a>
                                 @else
                                 <a href="#"><img src="images/uploads/ava4.jpg" alt="" width="70" height="70"></a>
                                 @endif
