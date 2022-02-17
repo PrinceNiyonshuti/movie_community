@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\GuestController;
 use App\Http\Controllers\MovieController;
 use Illuminate\Support\Facades\Route;
 
@@ -45,8 +46,6 @@ Route::prefix('/movies')->group(function () {
     Route::get('', function () {
         return view('moviesList');
     });
-    Route::get('/{movie:name}', [DashboardController::class, 'show']);
-    Route::get('/single', function () {
-        return view('movieSingle');
-    });
+    Route::get('', [GuestController::class, 'index']);
+    Route::get('/{movie:name}', [GuestController::class, 'show']);
 });

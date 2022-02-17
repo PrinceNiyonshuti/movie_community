@@ -36,24 +36,6 @@
                         </div>
                         @endforeach
                     </div>
-                    <div class="topbar-filter">
-                        <label>Movies per page:</label>
-                        <select>
-                            <option value="range">20 Movies</option>
-                            <option value="saab">10 Movies</option>
-                        </select>
-
-                        <div class="pagination2">
-                            <span>Page 1 of 2:</span>
-                            <a class="active" href="#">1</a>
-                            <a href="#">2</a>
-                            <a href="#">3</a>
-                            <a href="#">...</a>
-                            <a href="#">78</a>
-                            <a href="#">79</a>
-                            <a href="#"><i class="ion-arrow-right-b"></i></a>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>

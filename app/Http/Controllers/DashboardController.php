@@ -16,11 +16,5 @@ class DashboardController extends Controller
     {
         return view('account.profile');
     }
-    public function show(Movie $movie)
-    {
-
-        return view('movieSingle', [
-            'movie' => $movie
-        ]);
-    }
+    
 }
