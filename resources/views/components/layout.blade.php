@@ -136,13 +136,8 @@
                             </a>
                         </li>
                         <li class="dropdown first">
-                            <a class="btn btn-default" href="/community">
-                                Community
-                            </a>
-                        </li>
-                        <li class="dropdown first">
-                            <a class="btn btn-default" href="/news">
-                                News
+                            <a class="btn btn-default" href="/account">
+                                Account
                             </a>
                         </li>
                     </ul>
