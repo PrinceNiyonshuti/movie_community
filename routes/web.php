@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\GenreController;
 use App\Http\Controllers\GuestController;
 use App\Http\Controllers\MovieController;
 use App\Models\Movie;
@@ -44,6 +45,16 @@ Route::middleware('auth')->prefix('/movie')->group(function () {
     Route::get('/{movie}/edit', [MovieController::class, 'edit']);
     Route::patch('/{movie}', [MovieController::class, 'update']);
     Route::delete('/{movie}', [MovieController::class, 'destroy']);
+});
+
+// Genre actions
+Route::middleware('auth')->prefix('/genre')->group(function () {
+    Route::get('', [GenreController::class, 'index']);
+    Route::get('/new', [GenreController::class, 'create']);
+    Route::post('/store', [GenreController::class, 'store']);
+    Route::get('/{genre}/edit', [GenreController::class, 'edit']);
+    Route::patch('/{genre}', [GenreController::class, 'update']);
+    Route::delete('/{genre}', [GenreController::class, 'destroy']);
 });
 
 
