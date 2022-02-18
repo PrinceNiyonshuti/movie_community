@@ -54,7 +54,7 @@
                                     @endif
 
                                     <label>Video</label>
-                                    <input type="file" name="video" value="{{ $movie->video }}">
+                                    <input type="file" name="video" >
                                     @error('video')
                                     <p class="text-danger">{{ $message }}</p>
                                     @enderror

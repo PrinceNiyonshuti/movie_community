@@ -4,13 +4,15 @@ namespace App\Http\Controllers;
 
 use App\Models\Movie;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class MovieController extends Controller
 {
 
     public function index()
     {
-        return view('movie.index', ['movies' => Movie::latest()->paginate(2)]);
+        // return view('movie.index', ['movies' => Movie::latest()->paginate(2)]);
+        return view('movie.index', ['movies' => Auth::user()->movies]);
     }
 
     public function create()
@@ -70,7 +72,7 @@ class MovieController extends Controller
                 $existingMovie->thumbnail = $request->file('thumbnail')->store('thumbnails');
             }
             if (isset($request['video'])) {
-                $attributes['video'] = request()->file('video')->store('videos');
+                $existingMovie['video'] = request()->file('video')->store('videos');
             }
             $existingMovie->save();
         }

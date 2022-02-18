@@ -76,7 +76,6 @@
                                                 @if ($movie->video)
                                                 <video width="100%" height="400" controls>
                                                     <source src="/storage/{{ $movie->video }}" type="video/mp4">
-                                                    <source src="movie.ogg" type="video/ogg">
                                                     Your browser does not support the video tag.
                                                 </video>
                                                 @else

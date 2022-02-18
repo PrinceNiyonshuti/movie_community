@@ -30,6 +30,8 @@
                             <p>{{ session('success') }}</p>
                         </div>
                         @endif
+
+                        @if ($movies->count()>=1)
                         @foreach ($movies as $movie)
                         <div class="movie-item-style-2">
                             <img src="/storage/{{ $movie->thumbnail }}" alt="">
@@ -55,7 +57,10 @@
                             </div>
                         </div>
                         @endforeach
-                        {{ $movies->links() }}
+                        @else
+                        <h1>Please upload and provide movies to the community</h1>
+                        @endif
+
                     </div>
                 </div>
             </div>
