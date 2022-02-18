@@ -92,12 +92,12 @@
                             @foreach ($members as $member)
                             <div class="celeb-item">
                                 @if ($member->avatar)
-                                <a href="#"><img src="/storage/{{ $member->avatar }}" alt="" width="70" height="70"></a>
+                                <a href="/member/{{ $member->username }}"><img src="/storage/{{ $member->avatar }}" alt="" width="70" height="70"></a>
                                 @else
-                                <a href="#"><img src="images/uploads/ava4.jpg" alt="" width="70" height="70"></a>
+                                <a href="/member/{{ $member->username }}"><img src="images/uploads/ava4.jpg" alt="" width="70" height="70"></a>
                                 @endif
                                 <div class="celeb-author">
-                                    <h6><a href="#">{{ $member->username }}</a></h6>
+                                    <h6><a href="/member/{{ $member->username }}">{{ $member->username }}</a></h6>
                                     <span>Member</span>
                                 </div>
                             </div>

@@ -4,10 +4,10 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="hero-ct">
-                        <x-profile-name />
+                        <h1>{{ $member['firstName'] }} {{ $member['lastName'] }} Profile</h1>
                         <ul class="breadcumb">
                             <li class="active"><a href="/">Home</a></li>
-                            <li> <span class="ion-ios-arrow-right"></span>Dashboard</li>
+                            <li> <span class="ion-ios-arrow-right"></span>Member Activity</li>
                         </ul>
                     </div>
                 </div>
@@ -17,7 +17,20 @@
     <div class="page-single">
         <div class="container">
             <div class="row ipad-width2">
-                <x-sideBar />
+                <div class="col-md-3 col-sm-12 col-xs-12">
+                    <div class="user-information">
+                        <div class="user-img">
+                            @if ($member['avatar'])
+                            <a href="#"><img src="/storage/{{ $member['avatar'] }}" alt="{{ $member['username'] }}" width="120"><br></a>
+                            @else
+                            <a href="#"><img src="{{asset('images/uploads/user-img.png')}}" alt="{{ $member['username'] }}"><br></a>
+                            @endif
+
+                            <a href="#" class="redbtn">{{ $member['username'] }}</a>
+                        </div>
+                    </div>
+                </div>
+
                 <div class="col-md-9 col-sm-12 col-xs-12">
                     <div class="topbar-filter user">
                         <p>Found <span>{{ $movies->count() }} movies</span> in total</p>

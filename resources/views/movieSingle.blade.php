@@ -70,6 +70,10 @@
                                                     <h6>Release Date:</h6>
                                                     <p>{{ date('F d ,Y', strtotime($movie->released_date))}}</p>
                                                 </div>
+                                                <div class="sb-it">
+                                                    <h6>Uploaded by:</h6>
+                                                    <p><a href="/member/{{ $movie->user->username }}">{{ $movie->user->username }}</a></p>
+                                                </div>
                                             </div>
                                             <div class="col-lg-12" style="margin-top:15px">
                                                 <h2 class="mt-5">Watch Movie</h2>

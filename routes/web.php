@@ -63,3 +63,5 @@ Route::prefix('/movies')->group(function () {
     Route::get('/{movie:name}', [GuestController::class, 'show']);
     Route::post('/search', [GuestController::class, 'search']);
 });
+
+Route::get('/member/{user:username}', [GuestController::class, 'member']);

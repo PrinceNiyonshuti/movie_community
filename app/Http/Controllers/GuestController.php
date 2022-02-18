@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Movie;
+use App\Models\User;
 use Illuminate\Http\Request;
 
 class GuestController extends Controller
@@ -14,6 +15,7 @@ class GuestController extends Controller
             ['movies' => Movie::latest()->paginate(5)]
         );
     }
+
     public function show(Movie $movie)
     {
 
@@ -22,6 +24,7 @@ class GuestController extends Controller
             'movie' => $movie, 'related_movies' => $related_movies
         ]);
     }
+
     public function search(Request $request)
     {
         $searchData = $request->movie_name;
@@ -32,6 +35,15 @@ class GuestController extends Controller
                 'movies' => $results,
                 'searchData' => $searchData
             ]
+        );
+    }
+
+    public function member(User $user)
+    {
+        $member_movies = Movie::where('user_id', 'Like', '%' . $user->id. '%')->get();
+        return view(
+            'member',
+            ['member' => $user, 'movies' => $member_movies]
         );
     }
 }

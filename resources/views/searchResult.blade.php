@@ -7,7 +7,7 @@
                         <h1> Search results for {{$searchData}}</h1>
                         <ul class="breadcumb">
                             <li class="active"><a href="/">Home</a></li>
-                            <li> <span class="ion-ios-arrow-right"></span> movie listing</li>
+                            <li> <span class="ion-ios-arrow-right"></span>search results</li>
                         </ul>
                     </div>
                 </div>
