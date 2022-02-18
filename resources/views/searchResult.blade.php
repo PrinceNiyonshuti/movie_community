@@ -4,9 +4,9 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="hero-ct">
-                        <h1> movie listing - list</h1>
+                        <h1> Search results for {{$searchData}}</h1>
                         <ul class="breadcumb">
-                            <li class="active"><a href="#">Home</a></li>
+                            <li class="active"><a href="/">Home</a></li>
                             <li> <span class="ion-ios-arrow-right"></span> movie listing</li>
                         </ul>
                     </div>
@@ -34,7 +34,6 @@
                         </div>
                     </div>
                     @endforeach
-                    {{$movies->links()}}
                 </div>
                 <div class="col-md-4 col-sm-12 col-xs-12">
                     <div class="sidebar">

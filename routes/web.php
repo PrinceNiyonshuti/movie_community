@@ -61,4 +61,5 @@ Route::middleware('auth')->prefix('/genre')->group(function () {
 Route::prefix('/movies')->group(function () {
     Route::get('', [GuestController::class, 'index']);
     Route::get('/{movie:name}', [GuestController::class, 'show']);
+    Route::post('/search', [GuestController::class, 'search']);
 });

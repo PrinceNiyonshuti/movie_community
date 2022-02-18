@@ -22,4 +22,16 @@ class GuestController extends Controller
             'movie' => $movie, 'related_movies' => $related_movies
         ]);
     }
+    public function search(Request $request)
+    {
+        $searchData = $request->movie_name;
+        $results = Movie::where('name', 'Like', '%' . $searchData . '%')->get();
+        return view(
+            'searchResult',
+            [
+                'movies' => $results,
+                'searchData' => $searchData
+            ]
+        );
+    }
 }
