@@ -5,9 +5,9 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="hero-ct">
-                        <h1>Edward kennedy’s profile</h1>
+                        <x-profile-name />
                         <ul class="breadcumb">
-                            <li class="active"><a href="#">Home</a></li>
+                            <li class="active"><a href="/">Home</a></li>
                             <li> <span class="ion-ios-arrow-right"></span>Profile</li>
                         </ul>
                     </div>
@@ -54,7 +54,7 @@
                                     @endif
 
                                     <label>Video</label>
-                                    <input type="file" name="video" >
+                                    <input type="file" name="video">
                                     @error('video')
                                     <p class="text-danger">{{ $message }}</p>
                                     @enderror

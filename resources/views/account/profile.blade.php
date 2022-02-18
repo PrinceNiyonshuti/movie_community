@@ -5,9 +5,9 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="hero-ct">
-                        <h1>Edward kennedy’s profile</h1>
+                        <x-profile-name />
                         <ul class="breadcumb">
-                            <li class="active"><a href="#">Home</a></li>
+                            <li class="active"><a href="/">Home</a></li>
                             <li> <span class="ion-ios-arrow-right"></span>Profile</li>
                         </ul>
                     </div>
@@ -31,7 +31,7 @@
                             @csrf
                             <div class="row">
                                 <div class="col-md-4 form-it">
-                                    <a href="#"><img src="/storage/{{ Auth::user()->avatar }}" width="120"  alt=""><br></a><br>
+                                    <a href="#"><img src="/storage/{{ Auth::user()->avatar }}" width="120" alt=""><br></a><br>
                                     <input type="file" name="avatar" value="{{ old('avatar') }}">
                                 </div>
                                 <div class="col-md-8 form-it">

@@ -137,6 +137,11 @@
                                 Account
                             </a>
                         </li>
+                        <li class="dropdown first">
+                            <a class="btn btn-default" href="/movie">
+                                Add Movie
+                            </a>
+                        </li>
                         @endauth
                     </ul>
                     <ul class="nav navbar-nav flex-child-menu menu-right">
