@@ -23,7 +23,7 @@ class MovieController extends Controller
     public function store(Request $request)
     {
         $attributes = $request->validate([
-            'genre_id' => 'required',
+            'genre_id' => 'required|exists:genres,id',
             'name' => 'required|unique:movies',
             'description' => 'required|min:10',
             'released_date' => 'required',

@@ -59,12 +59,15 @@
 
                                     <label>Genre</label>
                                     <select name="genre_id" value="{{ old('genre_id') }}" required>
-                                        <option value="">-- Select Genre --</option>
+                                        @foreach (\App\Models\Genre::all() as $genre)
+                                        <option value="{{ $genre->id }}" {{ old('genre_id' == $genre->id ? 'selected' : '') }}>{{ ucwords($genre->name) }}</option>
+                                        @endforeach
+                                        <!-- <option value="">-- Select Genre --</option>
                                         <option value="1">Sci-Fi</option>
                                         <option value="2">Drama</option>
                                         <option value="3">Action</option>
                                         <option value="4">Comedy</option>
-                                        <option value="5">Adventure</option>
+                                        <option value="5">Adventure</option> -->
                                     </select>
                                     @error('genre_id')
                                     <p class="text-danger">{{ $message }}</p>

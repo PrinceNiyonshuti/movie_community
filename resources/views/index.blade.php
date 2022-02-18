@@ -18,10 +18,9 @@
                         </div>
                         <div class="title-in">
                             <div class="cate">
-                                <span class="blue"><a href="#">{{ $movie->genre_id }}</a></span>
+                                <span class="blue"><a href="#">{{ $movie->genre->name }}</a></span>
                             </div>
                             <h6><a href="/movies/{{ $movie->name}}">{{ $movie->name }}</a></h6>
-                            <p><i class="ion-android-star"></i><span>7.4</span> /10</p>
                         </div>
                     </div>
                     @endforeach
@@ -48,7 +47,7 @@
                             </div>
                             <div class="mv-item-infor">
                                 <h6><a href="/movies/{{ $movie->name}}">{{ $movie->name }}</a></h6>
-                                <p class="rate"><i class="ion-android-star"></i><span>8.1</span> /10</p>
+                                <p class="yellow">{{ $movie->genre->name }}</p>
                             </div>
                         </div>
                         @endforeach

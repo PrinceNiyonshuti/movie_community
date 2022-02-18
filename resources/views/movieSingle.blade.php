@@ -64,7 +64,7 @@
                                                 </div>
                                                 <div class="sb-it">
                                                     <h6>Genres:</h6>
-                                                    <p><a href="#">{{ $movie->genre_id }}</p>
+                                                    <p><a href="#">{{ $movie->genre->name }}</p>
                                                 </div>
                                                 <div class="sb-it">
                                                     <h6>Release Date:</h6>
@@ -135,8 +135,8 @@
                                             <div class="movie-item-style-2">
                                                 <img src="/storage/{{ $related->thumbnail }}" alt="/movies/{{ $related->name}}">
                                                 <div class="mv-item-infor">
-                                                    <h6><a href="/movies/{{ $related->name}}">{{ $related->name }} <span>(2012)</span></a></h6>
-                                                    <p class="rate">{{ $related->genre_id }}</p>
+                                                    <h6><a href="/movies/{{ $related->name}}">{{ $related->name }} <span>( {{ date('Y', strtotime($related->released_date))}} )</span></a></h6>
+                                                    <p class="rate">{{ $related->genre->name }}</p>
                                                     <p class="describe">{{Str::limit($related->description, 150)}}</p>
                                                     <p class="run-time"> Release : {{ date('d F , Y', strtotime($related->released_date))}}</p>
                                                     <p>Director: <a href="#">{{ $related->director }}</a></p>
