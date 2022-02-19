@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Genre;
+use App\Models\Movie;
 use Illuminate\Http\Request;
 
 class GenreController extends Controller
@@ -11,6 +12,12 @@ class GenreController extends Controller
     public function index()
     {
         return view('genre.index', ['genres' => Genre::latest()->paginate(10)]);
+    }
+
+    public function movies(Genre $genre)
+    {
+        // dd($genre);
+        return view('category', ['movies' => Movie::where('genre_id', 'Like', '%' . $genre->id . '%')->paginate(10), 'catName' => $genre]);
     }
 
     public function create()

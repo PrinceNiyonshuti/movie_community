@@ -21,26 +21,6 @@
                         <div class="social-btn">
                             <a href="#" class="parent-btn"><i class="ion-heart"></i> Add to Favorite</a>
                         </div>
-                        <!-- <div class="movie-rate">
-                            <div class="rate">
-                                <i class="ion-android-star"></i>
-                                <p><span>8.1</span> /10<br>
-                                    <span class="rv">56 Reviews</span>
-                                </p>
-                            </div>
-                            <div class="rate-star">
-                                <p>Rate This Movie: </p>
-                                <i class="ion-ios-star"></i>
-                                <i class="ion-ios-star"></i>
-                                <i class="ion-ios-star"></i>
-                                <i class="ion-ios-star"></i>
-                                <i class="ion-ios-star"></i>
-                                <i class="ion-ios-star"></i>
-                                <i class="ion-ios-star"></i>
-                                <i class="ion-ios-star"></i>
-                                <i class="ion-ios-star-outline"></i>
-                            </div>
-                        </div> -->
                         <div class="movie-tabs">
                             <div class="tabs">
                                 <ul class="tab-links tabs-mv">
@@ -64,7 +44,7 @@
                                                 </div>
                                                 <div class="sb-it">
                                                     <h6>Genres:</h6>
-                                                    <p><a href="#">{{ $movie->genre->name }}</p>
+                                                    <p><a href="/category/{{ $movie->genre->name }}">{{ $movie->genre->name }}</p>
                                                 </div>
                                                 <div class="sb-it">
                                                     <h6>Release Date:</h6>

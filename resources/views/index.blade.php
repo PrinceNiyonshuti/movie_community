@@ -18,7 +18,7 @@
                         </div>
                         <div class="title-in">
                             <div class="cate">
-                                <span class="blue"><a href="#">{{ $movie->genre->name }}</a></span>
+                                <span class="blue"><a href="#"><a href="/category/{{ $movie->genre->name }}">{{ $movie->genre->name }}</a></a></span>
                             </div>
                             <h6><a href="/movies/{{ $movie->name}}">{{ $movie->name }}</a></h6>
                         </div>
@@ -47,7 +47,7 @@
                             </div>
                             <div class="mv-item-infor">
                                 <h6><a href="/movies/{{ $movie->name}}">{{ $movie->name }}</a></h6>
-                                <p class="yellow">{{ $movie->genre->name }}</p>
+                                <p class="yellow"><a href="/category/{{ $movie->genre->name }}">{{ $movie->genre->name }}</a></p>
                             </div>
                         </div>
                         @endforeach

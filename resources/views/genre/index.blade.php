@@ -27,29 +27,35 @@
                     <div class="flex-wrap-movielist user-fav-list">
                         @if (session()->has('success'))
                         <div class="alert alert-success" role="alert">
-                            <p>{{ session('success') }}</p>
+                            <p style="color:black">{{ session('success') }}</p>
                         </div>
                         @endif
 
                         @if ($genres->count()>=1)
-                        @foreach ($genres as $genre)
-                        <div class="movie-item-style-2">
-                            <div class="mv-item-infor">
-                                <h6>
-                                    <a href="#">{{ $genre->name }}</a>
-                                    &nbsp; <span><label class=" primarybtn"><a href="/genre/{{ $genre->id }}/edit">Edit</a></label></span> &nbsp;
-                                    -
-                                    <!-- &nbsp; <span>
-                                        <form method="POST" action="/genre/{{ $genre->id }}" >
-                                            @csrf
-                                            @method('DELETE')
-                                            <label type=" submit" class="dangerbtn">Delete</label>
-                                        </form>
-                                    </span> -->
-                                </h6>
-                            </div>
-                        </div>
-                        @endforeach
+                        <table class="table table-bordered" style="color:white">
+                            <thead>
+                                <td>#</td>
+                                <td>Genre Name</td>
+                                <td>Movies</td>
+                                <td>action</td>
+                                <td>action</td>
+                            </thead>
+                            @foreach ($genres as $genre)
+                            <tr>
+                                <td>{{ $genre->id }}</td>
+                                <td><a href="/category/{{ $genre->name }}" style="color: white;">{{ $genre->name }}</a></td>
+                                <td><a href="" style="color: white;">{{ $genre->movies->count() }} Movies</a></td>
+                                <td><span><label class=" primarybtn"><a href="/genre/{{ $genre->id }}/edit">Edit</a></label></span></td>
+                                <td>
+                                    <form method="POST" action="/genre/{{ $genre->id }}">
+                                        @csrf
+                                        @method('DELETE')
+                                        <button type=" submit" class="dangerbtn">Delete</button>
+                                    </form>
+                                </td>
+                            </tr>
+                            @endforeach
+                        </table>
                         @else
                         <h1>No Genre available , please make one</h1>
                         @endif

@@ -54,7 +54,7 @@ Route::middleware('auth')->prefix('/genre')->group(function () {
     Route::post('/store', [GenreController::class, 'store']);
     Route::get('/{genre}/edit', [GenreController::class, 'edit']);
     Route::patch('/{genre}', [GenreController::class, 'update']);
-    Route::delete('/{genre}', [GenreController::class, 'destroy']);
+
 });
 
 
@@ -65,3 +65,4 @@ Route::prefix('/movies')->group(function () {
 });
 
 Route::get('/member/{user:username}', [GuestController::class, 'member']);
+Route::get('/category/{genre:name}', [GenreController::class, 'movies']);
