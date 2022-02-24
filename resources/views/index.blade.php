@@ -14,7 +14,7 @@
                     @foreach ($movies as $movie)
                     <div class="movie-item">
                         <div class="mv-img">
-                            <a href="/movies/{{ $movie->name}}"><img src="/storage/{{ $movie->thumbnail }}" alt="{{ $movie->name }}" width="285" height="10"></a>
+                            <a href="/movies/{{ $movie->name}}"><img src="/storage/{{ $movie->thumbnail }}" alt="{{ $movie->name }}" class="feat-img" ></a>
                         </div>
                         <div class="title-in">
                             <div class="cate">
@@ -65,7 +65,7 @@
                                         <div class="slide-it">
                                             <div class="movie-item">
                                                 <div class="mv-img">
-                                                    <img src="/storage/{{ $movie->thumbnail }}" alt="{{ $movie->name}}" width="185" height="284">
+                                                    <img src="/storage/{{ $movie->thumbnail }}" alt="{{ $movie->name}}" class="trend-img">
                                                 </div>
                                                 <div class="hvr-inner">
                                                     <a href="/movies/{{ $movie->name}}"> Read more <i class="ion-android-arrow-dropright"></i> </a>

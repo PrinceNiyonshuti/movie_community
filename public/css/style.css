@@ -4224,8 +4224,23 @@ ul {
     height: 100%;
     content: "";
 }
-.movie-items .movie-item img {
+.feat-img{
+    height: 370px;
+    width: 100%;
+    -webkit-transition: all 0.5s ease-out;
+    -moz-transition: all 0.5s ease-out;
+    -o-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+}
+.trend-img{
     height: 224px;
+    width: 185px;
+    -webkit-transition: all 0.5s ease-out;
+    -moz-transition: all 0.5s ease-out;
+    -o-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+}
+.movie-items .movie-item  {
     width: 100%;
     -webkit-transition: all 0.5s ease-out;
     -moz-transition: all 0.5s ease-out;

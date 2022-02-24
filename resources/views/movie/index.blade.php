@@ -34,7 +34,7 @@
                         @if ($movies->count()>=1)
                         @foreach ($movies as $movie)
                         <div class="movie-item-style-2">
-                            <img src="/storage/{{ $movie->thumbnail }}" alt="">
+                            <img src="/storage/{{ $movie->thumbnail }}" alt="{{ $movie->name}}" class="trend-img">
                             <div class="mv-item-infor">
                                 <h6><a href="/movies/{{ $movie->name}}">{{ $movie->name }} <span>( {{ date('Y', strtotime($movie->released_date))}} )</span></a></h6>
                                 <p class="describe">{{Str::limit($movie->description, 200)}}</p>
