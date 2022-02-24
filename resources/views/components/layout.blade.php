@@ -9,7 +9,7 @@
     <meta name="keywords" content="">
     <meta name="author" content="">
     <link rel="profile" href="#">
-
+    <link href="{{ asset('images/logo1.png') }}" rel="icon">
     <!--Google Font-->
     <link rel="stylesheet" href='http://fonts.googleapis.com/css?family=Dosis:400,700,500|Nunito:300,400,600' />
     <!-- Mobile specific meta -->
@@ -144,14 +144,14 @@
                     </ul>
                     <ul class="nav navbar-nav flex-child-menu menu-right">
                         @auth
-                        <li class="loginLink"><a href="#">{{ Auth::user()->username }}</a></li>
-                        <form id="logout-form" method="POST" action="/logout">
+                        <li class=""><a href="/account">{{ Auth::user()->username }}</a></li>
+                        <form id="btn btn-default" method="POST" action="/logout">
                             @csrf
-                            <button type="submit">Logout</button>
+                            <button type="submit" class="log-out">Logout</button>
                         </form>
 
                         @else
-                        <li class="loginLink"><a href="#">Log In</a></li>
+                        <li class="btn btn-default"><a href="#">Log In</a></li>
                         <li class="btn signupLink"><a href="#">Register</a></li>
                         @endauth
                     </ul>

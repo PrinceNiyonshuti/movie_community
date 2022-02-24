@@ -4224,7 +4224,20 @@ ul {
     height: 100%;
     content: "";
 }
-.feat-img{
+.log-out {
+    font-family: "Dosis", sans-serif;
+    font-size: 14px;
+    color: #abb7c4;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: #dd003f;
+    color: #ffffff;
+    padding: 6px 15px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+.feat-img {
     height: 370px;
     width: 100%;
     -webkit-transition: all 0.5s ease-out;
@@ -4232,7 +4245,7 @@ ul {
     -o-transition: all 0.5s ease-out;
     transition: all 0.5s ease-out;
 }
-.trend-img{
+.trend-img {
     height: 224px;
     width: 185px;
     -webkit-transition: all 0.5s ease-out;
@@ -4240,7 +4253,7 @@ ul {
     -o-transition: all 0.5s ease-out;
     transition: all 0.5s ease-out;
 }
-.movie-items .movie-item  {
+.movie-items .movie-item {
     width: 100%;
     -webkit-transition: all 0.5s ease-out;
     -moz-transition: all 0.5s ease-out;
