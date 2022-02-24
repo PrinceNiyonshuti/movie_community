@@ -103,7 +103,6 @@
     <header class="ht-header">
         <div class="container">
             <nav class="navbar navbar-default navbar-custom">
-                <!-- Brand and toggle get grouped for better mobile display -->
                 <div class="navbar-header logo">
                     <div class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                         <span class="sr-only">Toggle navigation</span>
@@ -115,7 +114,6 @@
                     </div>
                     <a href="/"><img class="logo" src="{{asset('images/logo1.png')}}" alt="" width="119" height="58"></a>
                 </div>
-                <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse flex-parent" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav flex-child-menu menu-left">
                         <li class="hidden">
@@ -218,10 +216,9 @@
         </div>
         <div class="ft-copyright">
             <div class="ft-left">
-                <p><a target="_blank" href="https://www.templateshub.net">Templates Hub</a></p>
             </div>
             <div class="backtotop">
-                <p><a href="#" id="back-to-top">Back to top <i class="ion-ios-arrow-thin-up"></i></a></p>
+                <p><a href="#" id="back-to-top" style="color: white;">Back to top <i class="ion-ios-arrow-thin-up"></i></a></p>
             </div>
         </div>
     </footer>
