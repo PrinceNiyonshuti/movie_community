@@ -16,7 +16,6 @@ class GenreController extends Controller
 
     public function movies(Genre $genre)
     {
-        // dd($genre);
         return view('category', ['movies' => Movie::where('genre_id', 'Like', '%' . $genre->id . '%')->paginate(10), 'catName' => $genre]);
     }
 

@@ -151,7 +151,7 @@
                         </form>
 
                         @else
-                        <li class="btn btn-default"><a href="#">Log In</a></li>
+                        <li class="btn loginLink"><a href="#">Log In</a></li>
                         <li class="btn signupLink"><a href="#">Register</a></li>
                         @endauth
                     </ul>

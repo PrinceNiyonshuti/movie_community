@@ -13,7 +13,7 @@
             <p>Account Details</p>
             <ul>
                 <li class="{{ request()->is('account') ? 'active' : '' }}"><a href="/account">Dashboard</a></li>
-                <li class="{{ request()->is('movie') ? 'active' : '' }}"><a href="/                                             ">Add Movie</a></li>
+                <li class="{{ request()->is('movie') ? 'active' : '' }}"><a href="/">Add Movie</a></li>
                 <li class="{{ request()->is('genre') ? 'active' : '' }}"><a href="/genre">Genres</a></li>
                 <li class="{{ request()->is('favorite') ? 'active' : '' }}"><a href="/favorite">Favorite movies</a></li>
             </ul>
