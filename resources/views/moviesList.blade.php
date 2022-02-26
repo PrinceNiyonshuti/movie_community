@@ -26,7 +26,7 @@
                         <img src="/storage/{{ $movie->thumbnail }}" alt="{{ $movie->name }}">
                         <div class="mv-item-infor">
                             <h6><a href="/movies/{{ $movie->name}}">{{ $movie->name }} <span>( {{ date('Y', strtotime($movie->released_date))}} )</span></a></h6>
-                            <p class="blue">{{ $movie->genre->name }}</p>
+                            <p class="blue"><a href="/category/{{ $movie->genre->name }}">{{ $movie->genre->name }}</a></p>
                             <p class="describe">{{Str::limit($movie->description, 150)}}</p>
                             <p class="run-time"> Release : {{ date('d F , Y', strtotime($movie->released_date))}}</p>
                             <p>Director: <a href="#">{{ $movie->director }}</a></p>

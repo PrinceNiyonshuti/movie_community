@@ -18,7 +18,7 @@
                         </div>
                         <div class="title-in">
                             <div class="cate">
-                                <span class="blue"><a href="#"><a href="/category/{{ $movie->genre->name }}">{{ $movie->genre->name }}</a></a></span>
+                                <span class="blue"><a href="/category/{{ $movie->genre->name }}">{{ $movie->genre->name }}</a></span>
                             </div>
                             <h6><a href="/movies/{{ $movie->name}}">{{ $movie->name }}</a></h6>
                         </div>
