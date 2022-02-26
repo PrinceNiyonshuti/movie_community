@@ -44,7 +44,7 @@
                             <tr>
                                 <td>{{ $genre->id }}</td>
                                 <td><a href="/category/{{ $genre->name }}" style="color: white;">{{ $genre->name }}</a></td>
-                                <td><a href="" style="color: white;">{{ $genre->movies->count() }} Movies</a></td>
+                                <td><a href="" style="color: white;"><a href="/category/{{ $genre->name }}">{{ $genre->movies->count() }} Movies</a></a></td>
                                 <td><span><label class=" primarybtn"><a href="/genre/{{ $genre->id }}/edit">Edit</a></label></span></td>
                                 <td>
                                     <form method="POST" action="/genre/{{ $genre->id }}">
