@@ -26,8 +26,9 @@
                             <p>{{ session('success') }}</p>
                         </div>
                         @endif
-                        <form method="POST" action="/genre/store" enctype="multipart/form-data" class="user">
+                        <form method="POST" action="/genre/{{ $genre->id }}" enctype="multipart/form-data" class="user">
                             @csrf
+                            @method('PATCH')
                             <h4>Genre details</h4>
                             <div class="row">
                                 <div class="col-md-8 form-it">
