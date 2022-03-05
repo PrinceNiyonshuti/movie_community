@@ -48,15 +48,7 @@ Route::middleware('auth')->prefix('/movie')->group(function () {
 });
 
 // Genre actions
-Route::middleware('auth')->prefix('/genre')->group(function () {
-    Route::get('', [GenreController::class, 'index']);
-    Route::get('/new', [GenreController::class, 'create']);
-    Route::post('/store', [GenreController::class, 'store']);
-    Route::get('/{genre}/edit', [GenreController::class, 'edit']);
-    Route::patch('/{genre}', [GenreController::class, 'update']);
-
-});
-
+Route::resource('genre', GenreController::class)->middleware('auth');
 
 Route::prefix('/movies')->group(function () {
     Route::get('', [GuestController::class, 'index']);
