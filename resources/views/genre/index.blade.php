@@ -20,9 +20,7 @@
                 <x-sideBar />
                 <div class="col-md-9 col-sm-12 col-xs-12">
                     <div style="margin-bottom: 30px;">
-                        <p><a href="/genre/new" class="redbtn">Add Genre</a></p>
-
-
+                        <p><a href="/genre/create" class="redbtn">Add Genre</a></p>
                     </div>
                     <div class="flex-wrap-movielist user-fav-list">
                         @if (session()->has('success'))
@@ -30,7 +28,6 @@
                             <p style="color:black">{{ session('success') }}</p>
                         </div>
                         @endif
-
                         @if ($genres->count()>=1)
                         <table class="table table-bordered" style="color:white">
                             <thead>
