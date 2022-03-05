@@ -26,13 +26,13 @@
                             <p>{{ session('success') }}</p>
                         </div>
                         @endif
-                        <form method="POST" action="/genre/store" enctype="multipart/form-data" class="user">
+                        <form method="POST" action="/genre" enctype="multipart/form-data" class="user">
                             @csrf
                             <h4>Genre details</h4>
                             <div class="row">
                                 <div class="col-md-8 form-it">
                                     <label>Genre Name</label>
-                                    <input type="text" name="name" value="{{ old('name') }}" placeholder="Movie Name" required>
+                                    <input type="text" name="name" value="{{ old('name') }}" placeholder="Genre Name" required>
                                     @error('name')
                                     <p class="text-danger">{{ $message }}</p>
                                     @enderror
