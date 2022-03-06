@@ -25,7 +25,7 @@ Route::get('/', function () {
         'movies' => Movie::latest()->get(),
         'members' => User::latest()->get(),
     ]);
-});
+})->name('index');
 
 Route::post('/register', [AuthController::class, 'register'])->middleware('guest');
 Route::post('/login', [AuthController::class, 'login'])->middleware('guest');
