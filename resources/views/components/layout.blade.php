@@ -178,7 +178,7 @@
                     <a href="index-2.html"><img class="logo" src="images/logo1.png" alt=""></a>
                     <p>KG 56 St , Kigali city<br>
                         Kigali city, Rwanda</p>
-                    <p>Call us: <a href="#">(+250) 788 888 8888</a></p>
+                    <p>Call us: <a href="#">(+250) 788 888 888</a></p>
                 </div>
                 <div class="flex-child-ft item2">
                     <h4>Resources</h4>
@@ -199,8 +199,7 @@
                     <h4>Account</h4>
                     <ul>
                         <li><a href="/account">My Account</a></li>
-                        <li><a href="#">Watchlist</a></li>
-                        <li><a href="#">Collections</a></li>
+                        <li><a href="#">Watch list</a></li>
                         <li><a href="#">User Guide</a></li>
                     </ul>
                 </div>
