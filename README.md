@@ -6,7 +6,7 @@ Movie community will facilitate the passion for movie making within our communit
 
 ## Coding style and standards
 
-- the coding style is used was line coding and error control , and the standard of using safe ,secure and portable codes
+the coding style is used was line coding and error control , and the standard of using safe ,secure and portable codes
 
 ## Source code files
 
