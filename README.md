@@ -1,5 +1,5 @@
 <p align="center">
-![image](https://user-images.githubusercontent.com/46887030/165627471-886a4696-3d55-42bf-a524-10de2c2ee551.png)
+    <img src="https://user-images.githubusercontent.com/46887030/165627580-9bfcb2a6-5386-4337-b6c5-fdbcdc39f29d.png" width="400">
 </p>
 
 ## About - Movie Community Project 
