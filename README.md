@@ -33,3 +33,7 @@ before starting to run the project
     Run php artisan migrate
     Run php artisan db:seed
     Run php artisan storage:link
+
+## Feedback and issues
+
+Any issue and feedback from the app don't hesitate to make an issue
