@@ -33,6 +33,9 @@ before starting to run the project
     Run php artisan migrate
     Run php artisan db:seed
     Run php artisan storage:link
+    or
+    Run php artisan migrate:fresh --seed
+    Run php artisan storage:link
 
 ## Feedback and issues
 
