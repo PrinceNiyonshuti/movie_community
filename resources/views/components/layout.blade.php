@@ -98,7 +98,6 @@
         </div>
     </div>
     <!--end of signup form popup-->
-
     <!-- BEGIN | Header -->
     <header class="ht-header">
         <div class="container">
