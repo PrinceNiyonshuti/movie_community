@@ -4,6 +4,7 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\Schema;
 
 class GenreSeeder extends Seeder
 {
@@ -15,5 +16,7 @@ class GenreSeeder extends Seeder
     public function run()
     {
         //
+        Schema::disableForeignKeyConstraints();
+        Schema::enableForeignKeyConstraints();
     }
 }
