@@ -4,6 +4,7 @@ namespace App\Http\Middleware;
 
 use Closure;
 use Illuminate\Http\Request;
+use Illuminate\Http\Response;
 
 class IsAdmin
 {
@@ -16,6 +17,8 @@ class IsAdmin
      */
     public function handle(Request $request, Closure $next)
     {
-        return $next($request);
+        if (auth()->user()?->level_id != '3') {
+            abort(Response::HTTP_FORBIDDEN);
+        }
     }
 }
