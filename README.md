@@ -24,6 +24,7 @@ before starting to run the project
 
 - create your .env file 
 - create your database
+- Xampp or apache server
 
 ### after run these script 
 
