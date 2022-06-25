@@ -2,6 +2,8 @@
 
 namespace Database\Factories;
 
+use App\Models\Genre;
+use App\Models\User;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
@@ -18,8 +20,8 @@ class MovieFactory extends Factory
     {
         return [
             //
-            'user_id' => '1',
-            'genre_id' => $this->faker->unique(),
+            'user_id' => User::all()->random()->id,
+            'genre_id' => Genre::all()->random()->id,
             'name' => $this->faker->firstName(),
             'description' => $this->faker->sentence(5),
             'released_date' => $this->faker->date(),
