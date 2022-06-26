@@ -48,7 +48,7 @@ Route::middleware('auth')->prefix('/movie')->group(function () {
 });
 
 // Genre actions
-Route::resource('genre', GenreController::class)->middleware('auth');
+Route::resource('genre', GenreController::class)->middleware('IsAdmin');
 Route::prefix('/movies')->group(function () {
     Route::get('', [GuestController::class, 'index']);
     Route::get('/{movie:name}', [GuestController::class, 'show']);
