@@ -28,9 +28,9 @@ class AuthServiceProvider extends ServiceProvider
 
         //
 
-        // Admin Gurad
+        // Admin Gate
         Gate::define('Admin', function (User $user) {
-            return $user?->IsAdmin == '1';
+            return $user?->IsAdmin == true;
         });
     }
 }
