@@ -14,7 +14,9 @@
             <ul>
                 <li class="{{ request()->is('account') ? 'active' : '' }}"><a href="/account">Dashboard</a></li>
                 <li class="{{ request()->is('movie') ? 'active' : '' }}"><a href="/movie">Add Movie</a></li>
+                @can('admin')
                 <li class="{{ request()->is('genre') ? 'active' : '' }}"><a href="/genre">Genres</a></li>
+                @endcan
                 <li class="{{ request()->is('favorite') ? 'active' : '' }}"><a href="/favorite">Favorite movies</a></li>
             </ul>
         </div>
