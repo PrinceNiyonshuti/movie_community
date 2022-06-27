@@ -20,7 +20,7 @@ return new class extends Migration
             $table->string('lastName')->nullable();
             $table->string('email')->unique();
             $table->string('avatar')->nullable();
-            $table->boolean('IsAdmin')->nullable();
+            $table->integer('IsAdmin');
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
             $table->rememberToken();
