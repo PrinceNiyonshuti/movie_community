@@ -20,5 +20,6 @@ class IsAdmin
         if (auth()->user()?->IsAdmin != 1) {
             abort(Response::HTTP_FORBIDDEN);
         }
+        return $next($request);
     }
 }
