@@ -6,6 +6,8 @@
 
 Movie community will facilitate the passion for movie making within our community ,To our knowledge we haven’t seen this done before and are looking to construct the simplest way to accomplish it.  A film can be as complicated or simple as you make it and we are trying to find the right shoe to fit around what a community can produce without sacrificing quality.
 
+## Flowchart
+
 ## Coding style and standards
 
 the coding style is used was line coding and error control , and the standard of using safe ,secure and portable codes
