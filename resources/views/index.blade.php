@@ -14,7 +14,7 @@
                     @foreach ($movies as $movie)
                     <div class="movie-item">
                         <div class="mv-img">
-                            <a href="/movies/{{ $movie->name}}"><img src="/storage/{{ $movie->thumbnail }}" alt="{{ $movie->name }}" class="feat-img" ></a>
+                            <a href="/movies/{{ $movie->name}}"><img src="/storage/{{ $movie->thumbnail }}" alt="{{ $movie->name }}" class="feat-img"></a>
                         </div>
                         <div class="title-in">
                             <div class="cate">
@@ -98,7 +98,7 @@
                                 @endif
                                 <div class="celeb-author">
                                     <h6><a href="/member/{{ $member->username }}">{{ $member->username }}</a></h6>
-                                    <span>Member</span>
+                                    <span>{{ $member->IsAdmin ? 'Admin':'Member' }}</span>
                                 </div>
                             </div>
                             @endforeach
