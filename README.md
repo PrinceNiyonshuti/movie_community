@@ -28,7 +28,7 @@ before starting to run the project
 - create your database
 - Xampp or apache server
 
-### after run these script 
+## after run these script 
 
     Run composer install
     Run cp .env.example .env or copy .env.example .env
