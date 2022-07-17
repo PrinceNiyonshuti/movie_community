@@ -34,13 +34,13 @@ the coding style is used was line coding and error control , and the standard of
 
 before starting to run the project 
 
-### Requirements
+## Requirements
 
 - create your .env file 
 - create your database
 - Xampp or apache server
 
-### after run these script 
+## after run these script 
 
     Run composer install
     Run cp .env.example .env or copy .env.example .env
