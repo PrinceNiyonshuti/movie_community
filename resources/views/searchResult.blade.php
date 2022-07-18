@@ -23,7 +23,7 @@
                     </div>
                     @foreach ($movies as $movie)
                     <div class="movie-item-style-2">
-                        <img src="/storage/{{ $movie->thumbnail }}" alt="{{ $movie->name }}">
+                        <img src="{{ $movie->thumbnail? '/storage/$movie->thumbnail':'https://cdn.shopify.com/s/files/1/0057/3728/3618/products/black-adam_t9tj2u28_480x.progressive.jpg?v=1657031326' }}" alt="{{ $movie->name }}">
                         <div class="mv-item-infor">
                             <h6><a href="/movies/{{ $movie->name}}">{{ $movie->name }} <span>( {{ date('Y', strtotime($movie->released_date))}} )</span></a></h6>
                             <p class="blue">{{ $movie->genre->name }}</p>
