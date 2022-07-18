@@ -117,7 +117,7 @@
                                             </div>
                                             @foreach ($related_movies as $related )
                                             <div class="movie-item-style-2">
-                                                <img src="/storage/{{ $related->thumbnail }}" alt="/movies/{{ $related->name}}">
+                                                <img src="{{ $related->thumbnail? '/storage/$related->thumbnail':'https://cdn.shopify.com/s/files/1/0057/3728/3618/products/black-adam_t9tj2u28_480x.progressive.jpg?v=1657031326' }}" alt="/movies/{{ $related->name}}">
                                                 <div class="mv-item-infor">
                                                     <h6><a href="/movies/{{ $related->name}}">{{ $related->name }} <span>( {{ date('Y', strtotime($related->released_date))}} )</span></a></h6>
                                                     <p class="rate">{{ $related->genre->name }}</p>
