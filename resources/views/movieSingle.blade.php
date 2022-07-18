@@ -12,7 +12,7 @@
             <div class="row ipad-width2">
                 <div class="col-md-4 col-sm-12 col-xs-12">
                     <div class="movie-img sticky-sb">
-                        <img src="/storage/{{ $movie->thumbnail }}" alt="">
+                        <img src="{{ $movie->thumbnail? '/storage/$movie->thumbnail':'https://cdn.shopify.com/s/files/1/0057/3728/3618/products/black-adam_t9tj2u28_480x.progressive.jpg?v=1657031326' }}" alt="">
                     </div>
                 </div>
                 <div class="col-md-8 col-sm-12 col-xs-12">
