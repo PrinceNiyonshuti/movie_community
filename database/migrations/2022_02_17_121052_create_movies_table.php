@@ -22,7 +22,7 @@ return new class extends Migration
             $table->text('released_date');
             $table->text('director');
             $table->text('writer');
-            $table->text('thumbnail');
+            $table->text('thumbnail')->nullable();
             $table->text('video')->nullable();
             $table->text('alternative_video')->nullable();
             $table->timestamps();
