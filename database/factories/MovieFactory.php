@@ -27,7 +27,8 @@ class MovieFactory extends Factory
             'released_date' => $this->faker->date(),
             'director' => $this->faker->unique()->name(),
             'writer' => $this->faker->unique()->name(),
-            'thumbnail' => $this->faker->imageUrl($width = 200, $height = 200),
+            'thumbnail' => 'https://cdn.shopify.com/s/files/1/0057/3728/3618/products/black-adam_t9tj2u28_480x.progressive.jpg?v=1657031326',
+            // 'thumbnail' => $this->faker->imageUrl($width = 200, $height = 200),
             'video' => $this->faker->imageUrl($width = 200, $height = 200),
         ];
     }
