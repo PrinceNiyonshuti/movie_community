@@ -27,7 +27,7 @@ class MovieFactory extends Factory
             'released_date' => $this->faker->date(),
             'director' => $this->faker->unique()->name(),
             'writer' => $this->faker->unique()->name(),
-            'thumbnail' => $this->faker->imageUrl($width = 200, $height = 200),
+            // 'thumbnail' => $this->faker->imageUrl($width = 200, $height = 200),
             'video' => $this->faker->imageUrl($width = 200, $height = 200),
         ];
     }
