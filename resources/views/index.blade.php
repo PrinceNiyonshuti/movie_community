@@ -92,7 +92,7 @@
                             @foreach ($members as $member)
                             <div class="celeb-item">
                                 @if ($member->avatar)
-                                <a href="/member/{{ $member->username }}"><img src="/storage/{{ $member->avatar }}" alt="" width="70" height="70"></a>
+                                <a href="/member/{{ $member->username }}"><img src="{{ $member->avatar ? '/storage/$member->avatar' :asset('images/uploads/user-img.png') }}" alt="" width="70" height="70"></a>
                                 @else
                                 <a href="/member/{{ $member->username }}"><img src="images/uploads/ava4.jpg" alt="" width="70" height="70"></a>
                                 @endif
