@@ -25,7 +25,7 @@
                     <div class="flex-wrap-movielist grid-fav">
                         @foreach ($movies as $movie)
                         <div class="movie-item-style-2 movie-item-style-1 style-3">
-                            <img src="/storage/{{ $movie->thumbnail }}" alt="">
+                            <img src="{{ $movie->thumbnail? '/storage/$movie->thumbnail':asset('images/uploads/mv-it3.jpg') }}" alt="{{ $movie->name }}">
                             <div class="hvr-inner">
                                 <a href="/movies/{{ $movie->name}}"> Read more <i class="ion-android-arrow-dropright"></i> </a>
                             </div>

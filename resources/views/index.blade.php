@@ -14,7 +14,7 @@
                     @foreach ($movies as $movie)
                     <div class="movie-item">
                         <div class="mv-img">
-                            <a href="/movies/{{ $movie->name}}"><img src="{{ $movie->thumbnail? '/storage/$movie->thumbnail':'https://cdn.shopify.com/s/files/1/0057/3728/3618/products/black-adam_t9tj2u28_480x.progressive.jpg?v=1657031326' }}" alt="{{ $movie->name }}" class="feat-img"></a>
+                            <a href="/movies/{{ $movie->name}}"><img src="{{ $movie->thumbnail? '/storage/$movie->thumbnail': asset('images/uploads/series-img.jpg') }}" alt="{{ $movie->name }}" class="feat-img"></a>
                         </div>
                         <div class="title-in">
                             <div class="cate">
@@ -41,7 +41,7 @@
                     <div class="flex-wrap-movielist grid-fav">
                         @foreach ($movies as $movie)
                         <div class="movie-item-style-2 movie-item-style-1 style-3">
-                            <img src="{{ $movie->thumbnail? '/storage/$movie->thumbnail':'https://cdn.shopify.com/s/files/1/0057/3728/3618/products/black-adam_t9tj2u28_480x.progressive.jpg?v=1657031326' }}" width="160" height="224" alt="{{ $movie->name}}">
+                            <img src="{{ $movie->thumbnail? '/storage/$movie->thumbnail':asset('images/uploads/mv-it4.jpg') }}" width="160" height="224" alt="{{ $movie->name}}">
                             <div class="hvr-inner">
                                 <a href="/movies/{{ $movie->name}}"> Read more <i class="ion-android-arrow-dropright"></i> </a>
                             </div>
@@ -65,7 +65,7 @@
                                         <div class="slide-it">
                                             <div class="movie-item">
                                                 <div class="mv-img">
-                                                    <img src="{{ $movie->thumbnail? '/storage/$movie->thumbnail':'https://cdn.shopify.com/s/files/1/0057/3728/3618/products/black-adam_t9tj2u28_480x.progressive.jpg?v=1657031326' }}" alt="{{ $movie->name}}" class="trend-img">
+                                                    <img src="{{ $movie->thumbnail? '/storage/$movie->thumbnail': asset('images/uploads/mv-it6.jpg') }}" alt="{{ $movie->name}}" class="trend-img">
                                                 </div>
                                                 <div class="hvr-inner">
                                                     <a href="/movies/{{ $movie->name}}"> Read more <i class="ion-android-arrow-dropright"></i> </a>
