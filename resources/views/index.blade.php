@@ -14,7 +14,7 @@
                     @foreach ($movies as $movie)
                     <div class="movie-item">
                         <div class="mv-img">
-                            <a href="/movies/{{ $movie->name}}"><img src="{{ $movie->thumbnail? '/storage/$movie->thumbnail':'https://cdn.shopify.com/s/files/1/0057/3728/3618/products/black-adam_t9tj2u28_480x.progressive.jpg?v=1657031326' }}" alt="{{ $movie->name }}" class="feat-img"></a>
+                            <a href="/movies/{{ $movie->name}}"><img src="{{ $movie->thumbnail? '/storage/$movie->thumbnail': asset('images/uploads/series-img.jpg') }}" alt="{{ $movie->name }}" class="feat-img"></a>
                         </div>
                         <div class="title-in">
                             <div class="cate">
