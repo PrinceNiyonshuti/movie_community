@@ -7,7 +7,7 @@ use App\Models\User;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
- * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\favorite>
+ * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Favorite>
  */
 class FavoriteFactory extends Factory
 {

@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\favorite;
+use App\Models\Favorite;
 use Illuminate\Http\Request;
 
 class FavoriteController extends Controller
@@ -41,10 +41,10 @@ class FavoriteController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\favorite  $favorite
+     * @param  \App\Models\Favorite  $favorite
      * @return \Illuminate\Http\Response
      */
-    public function show(favorite $favorite)
+    public function show(Favorite $favorite)
     {
         //
     }
@@ -52,10 +52,10 @@ class FavoriteController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\favorite  $favorite
+     * @param  \App\Models\Favorite  $favorite
      * @return \Illuminate\Http\Response
      */
-    public function edit(favorite $favorite)
+    public function edit(Favorite $favorite)
     {
         //
     }
@@ -64,10 +64,10 @@ class FavoriteController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\favorite  $favorite
+     * @param  \App\Models\Favorite  $favorite
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, favorite $favorite)
+    public function update(Request $request, Favorite $favorite)
     {
         //
     }
@@ -75,10 +75,10 @@ class FavoriteController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\favorite  $favorite
+     * @param  \App\Models\Favorite  $favorite
      * @return \Illuminate\Http\Response
      */
-    public function destroy(favorite $favorite)
+    public function destroy(Favorite $favorite)
     {
         //
     }
