@@ -2,6 +2,8 @@
 
 namespace Database\Factories;
 
+use App\Models\Movie;
+use App\Models\User;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
@@ -18,6 +20,9 @@ class FavoriteFactory extends Factory
     {
         return [
             //
+            'user_id' => User::all()->random()->id,
+            'movie_id' => Movie::all()->random()->id,
+            'counter' => '2',
         ];
     }
 }
