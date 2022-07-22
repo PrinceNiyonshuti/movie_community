@@ -18,4 +18,9 @@ class Movie extends Model
     {
         return $this->belongsTo(Genre::class);
     }
+
+    public function favorites()
+    {
+        return $this->hasMany(Favorite::class);
+    }
 }
