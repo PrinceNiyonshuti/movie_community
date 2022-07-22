@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\FavoriteController;
 use App\Http\Controllers\GenreController;
 use App\Http\Controllers\GuestController;
 use App\Http\Controllers\MovieController;
@@ -57,3 +58,8 @@ Route::prefix('/movies')->group(function () {
 
 Route::get('/member/{user:username}', [GuestController::class, 'member']);
 Route::get('/category/{genre:name}', [GenreController::class, 'movies']);
+
+// Favorite actions
+
+Route::post('/favorite/{movie:name}', [FavoriteController::class, 'store']);
+Route::post('/unFavorite/{movie:name}', [FavoriteController::class, 'destroy']);
