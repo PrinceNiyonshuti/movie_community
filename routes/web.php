@@ -57,3 +57,5 @@ Route::prefix('/movies')->group(function () {
 
 Route::get('/member/{user:username}', [GuestController::class, 'member']);
 Route::get('/category/{genre:name}', [GenreController::class, 'movies']);
+
+// Favorite actions
