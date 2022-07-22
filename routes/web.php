@@ -62,3 +62,4 @@ Route::get('/category/{genre:name}', [GenreController::class, 'movies']);
 // Favorite actions
 
 Route::get('/favorite/{movie:name}', [FavoriteController::class, 'store']);
+Route::get('/unFavorite/{movie:name}', [FavoriteController::class, 'destroy']);
