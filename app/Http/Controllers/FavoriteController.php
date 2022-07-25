@@ -44,8 +44,7 @@ class FavoriteController extends Controller
             return redirect()->back();
         } else {
             $favorite = new Favorite();
-            // $favorite->user_id = auth()->user()->id;
-            $favorite->user_id = 2;
+            $favorite->user_id = auth()->user()->id;
             $favorite->movie_id = $movie->id;
             $favorite->counter = 1;
             $favorite->save();
