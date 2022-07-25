@@ -19,7 +19,15 @@
                     <div class="movie-single-ct main-content">
                         <h1 class="bd-hd">{{ $movie->name }} <span>{{ date('Y', strtotime($movie->released_date))}}</span></h1>
                         <div class="social-btn">
-                            <a href="#" class="parent-btn"><i class="ion-heart"></i> Add to Favorite</a>
+                            @auth
+                                <form id="btn btn-default" method="POST" action="/favorite/{{ $movie->name }}">
+                                    @csrf
+                                    <button type="submit" class="log-out"><i class="ion-heart"></i> Add to Favorite</button>
+                                </form>
+                            @else
+                                <a href="#" class="parent-btn btn loginLink"><i class="ion-heart"></i> Login to Save Your Favorite</a>
+                            @endauth
+
                         </div>
                         <div class="movie-tabs">
                             <div class="tabs">
