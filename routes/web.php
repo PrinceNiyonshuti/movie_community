@@ -6,6 +6,7 @@ use App\Http\Controllers\FavoriteController;
 use App\Http\Controllers\GenreController;
 use App\Http\Controllers\GuestController;
 use App\Http\Controllers\MovieController;
+use App\Http\Controllers\SubscriberController;
 use App\Models\Movie;
 use App\Models\User;
 use Illuminate\Support\Facades\Route;
@@ -63,3 +64,7 @@ Route::get('/category/{genre:name}', [GenreController::class, 'movies']);
 
 Route::post('/favorite/{movie:name}', [FavoriteController::class, 'store']);
 Route::post('/unFavorite/{movie:name}', [FavoriteController::class, 'destroy']);
+
+// Subscriber routes
+
+Route::post('/subscribe', [SubscriberController::class, 'store']);
