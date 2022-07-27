@@ -203,7 +203,10 @@
                     <h4>Newsletter</h4>
                     <p>Subscribe to our newsletter system now <br> to get latest news from us.</p>
                     <form method="POST" action="/subscribe">
-                        <input type="text" placeholder="Enter your email...">
+                        <input type="text" name="email" value="{{ old('email') }}" placeholder="Enter your email...">
+                        @error('email')
+                        <p class="text-danger">{{ $message }}</p>
+                        @enderror
                     </form>
                     <a href="#" class="btn">Subscribe now <i class="ion-ios-arrow-forward"></i></a>
                 </div>
