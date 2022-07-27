@@ -17,6 +17,18 @@
     <!-- CSS files -->
     <link rel="stylesheet" href="{{ asset('css/plugins.css') }}">
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+    <style>
+        .sub {
+            font-family: "Dosis", sans-serif;
+            font-size: 14px;
+            color: #dd003f;
+            font-weight: bold;
+            text-transform: uppercase;
+            border: none !important;
+            background: none;
+            margin-top: 2px;
+        }
+    </style>
 </head>
 
 <body>
@@ -208,9 +220,8 @@
                         @error('email')
                         <p class="text-danger">{{ $message }}</p>
                         @enderror
-                        <button type="submit" class="log-out"><i class="ion-heart"></i> Add to Favorite</button>
+                        <button type="submit" class="btn sub">Subscribe now <i class="ion-ios-arrow-forward"></i></button>
                     </form>
-                    <a href="#" class="btn">Subscribe now <i class="ion-ios-arrow-forward"></i></a>
                 </div>
             </div>
         </div>
