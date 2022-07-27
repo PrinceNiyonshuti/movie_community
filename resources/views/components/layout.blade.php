@@ -17,6 +17,18 @@
     <!-- CSS files -->
     <link rel="stylesheet" href="{{ asset('css/plugins.css') }}">
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+    <style>
+        .sub {
+            font-family: "Dosis", sans-serif;
+            font-size: 14px;
+            color: #dd003f;
+            font-weight: bold;
+            text-transform: uppercase;
+            border: none !important;
+            background: none;
+            margin-top: 2px;
+        }
+    </style>
 </head>
 
 <body>
@@ -202,10 +214,14 @@
                 <div class="flex-child-ft item5">
                     <h4>Newsletter</h4>
                     <p>Subscribe to our newsletter system now <br> to get latest news from us.</p>
-                    <form action="#">
-                        <input type="text" placeholder="Enter your email...">
+                    <form method="POST" action="/subscribe">
+                        @csrf
+                        <input type="email" name="email" value="{{ old('email') }}" placeholder="Enter your email...">
+                        @error('email')
+                        <p class="text-danger">{{ $message }}</p>
+                        @enderror
+                        <button type="submit" class="btn sub">Subscribe now <i class="ion-ios-arrow-forward"></i></button>
                     </form>
-                    <a href="#" class="btn">Subscribe now <i class="ion-ios-arrow-forward"></i></a>
                 </div>
             </div>
         </div>
