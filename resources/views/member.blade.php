@@ -38,7 +38,7 @@
                     <div class="flex-wrap-movielist grid-fav">
                         @foreach ($movies as $movie)
                         <div class="movie-item-style-2 movie-item-style-1 style-3">
-                            <img src="{{ $movie->thumbnail? '/storage/$movie->thumbnail':'https://cdn.shopify.com/s/files/1/0057/3728/3618/products/black-adam_t9tj2u28_480x.progressive.jpg?v=1657031326' }}" alt="">
+                            <img src="{{ $movie->thumbnail? '/storage/$movie->thumbnail':asset('images/uploads/mv2.jpg') }}" alt="">
                             <div class="hvr-inner">
                                 <a href="/movies/{{ $movie->name}}"> Read more <i class="ion-android-arrow-dropright"></i> </a>
                             </div>
