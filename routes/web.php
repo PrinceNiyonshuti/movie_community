@@ -68,3 +68,7 @@ Route::post('/unFavorite/{movie:name}', [FavoriteController::class, 'destroy']);
 // Subscriber routes
 
 Route::post('/subscribe', [SubscriberController::class, 'store']);
+
+// Members routes
+
+Route::post('/members', [GuestController::class, 'list']);
