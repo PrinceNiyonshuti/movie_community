@@ -46,9 +46,4 @@ class GuestController extends Controller
             ['member' => $user, 'movies' => $member_movies]
         );
     }
-
-    public function list()
-    {
-        # code...
-    }
 }

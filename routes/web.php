@@ -61,14 +61,8 @@ Route::get('/member/{user:username}', [GuestController::class, 'member']);
 Route::get('/category/{genre:name}', [GenreController::class, 'movies']);
 
 // Favorite actions
-
 Route::post('/favorite/{movie:name}', [FavoriteController::class, 'store']);
 Route::post('/unFavorite/{movie:name}', [FavoriteController::class, 'destroy']);
 
 // Subscriber routes
-
 Route::post('/subscribe', [SubscriberController::class, 'store']);
-
-// Members routes
-
-Route::post('/members', [GuestController::class, 'list']);
