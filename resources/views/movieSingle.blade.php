@@ -12,7 +12,7 @@
             <div class="row ipad-width2">
                 <div class="col-md-4 col-sm-12 col-xs-12">
                     <div class="movie-img sticky-sb">
-                        <img src="{{ $movie->thumbnail? '/storage/$movie->thumbnail':'https://cdn.shopify.com/s/files/1/0057/3728/3618/products/black-adam_t9tj2u28_480x.progressive.jpg?v=1657031326' }}" alt="">
+                        <img src="{{ $movie->thumbnail? '/storage/$movie->thumbnail':asset('images/uploads/movie-single.jpg') }}" alt="">
                     </div>
                 </div>
                 <div class="col-md-8 col-sm-12 col-xs-12">
@@ -20,12 +20,12 @@
                         <h1 class="bd-hd">{{ $movie->name }} <span>{{ date('Y', strtotime($movie->released_date))}}</span></h1>
                         <div class="social-btn">
                             @auth
-                                <form id="btn btn-default" method="POST" action="/favorite/{{ $movie->name }}">
-                                    @csrf
-                                    <button type="submit" class="log-out"><i class="ion-heart"></i> Add to Favorite</button>
-                                </form>
+                            <form id="btn btn-default" method="POST" action="/favorite/{{ $movie->name }}">
+                                @csrf
+                                <button type="submit" class="log-out"><i class="ion-heart"></i> Add to Favorite</button>
+                            </form>
                             @else
-                                <a href="#" class="parent-btn btn loginLink"><i class="ion-heart"></i> Login to Save Your Favorite</a>
+                            <a href="#" class="parent-btn btn loginLink"><i class="ion-heart"></i> Login to Save Your Favorite</a>
                             @endauth
 
                         </div>
@@ -97,7 +97,7 @@
                                             </div>
                                             @foreach ($related_movies as $related )
                                             <div class="movie-item-style-2">
-                                                <img src="{{ $related->thumbnail? '/storage/$related->thumbnail':'https://cdn.shopify.com/s/files/1/0057/3728/3618/products/black-adam_t9tj2u28_480x.progressive.jpg?v=1657031326' }}" alt="/movies/{{ $related->name}}">
+                                                <img src="{{ $related->thumbnail? '/storage/$related->thumbnail':asset('images/uploads/mv2.jpg') }}" alt="/movies/{{ $related->name}}">
                                                 <div class="mv-item-infor">
                                                     <h6><a href="/movies/{{ $related->name}}">{{ $related->name }} <span>( {{ date('Y', strtotime($related->released_date))}} )</span></a></h6>
                                                     <p class="rate">{{ $related->genre->name }}</p>
