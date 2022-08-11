@@ -50,5 +50,6 @@ class GuestController extends Controller
     public function list()
     {
         # code...
+        return view('members');
     }
 }
