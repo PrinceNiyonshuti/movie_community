@@ -19,7 +19,7 @@
             <div class="row ipad-width2">
                 <div class="col-md-8 col-sm-12 col-xs-12">
                     <div class="topbar-filter">
-                        <p>Found <span>2 members</span> in total</p>
+                        <p>Found <span>{{ $members->count() }} members</span> in total</p>
                     </div>
                 </div>
             </div>
