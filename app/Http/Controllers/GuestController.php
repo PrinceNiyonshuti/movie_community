@@ -40,7 +40,7 @@ class GuestController extends Controller
 
     public function member(User $user)
     {
-        $member_movies = Movie::where('user_id', 'Like', '%' . $user->id. '%')->get();
+        $member_movies = Movie::where('user_id', 'Like', '%' . $user->id . '%')->get();
         return view(
             'member',
             ['member' => $user, 'movies' => $member_movies]
@@ -49,6 +49,7 @@ class GuestController extends Controller
 
     public function list()
     {
-        # code...
+        $all_members = User::latest()->get();
+        return view('members', ['members' => $all_members]);
     }
 }
