@@ -14,7 +14,7 @@
             </div>
         </div>
     </div>
-    <div class="page-single movie_list">
+    <div class="movie-items">
         <div class="container">
             <div class="row ipad-width2">
                 <div class="col-md-8 col-sm-12 col-xs-12">
@@ -29,7 +29,7 @@
                                 <a href="/member/{{ $member->username}}"> View activity <i class="ion-android-arrow-dropright"></i> </a>
                             </div> -->
                             <div class="mv-item-infor">
-                                <h6><a href="/movies/{{ $member->name}}">{{ $member->username }}</a></h6>
+                                <h6><a href="/member/{{ $member->username}}">{{ $member->username }}</a></h6>
                             </div>
                         </div>
                         @endforeach
