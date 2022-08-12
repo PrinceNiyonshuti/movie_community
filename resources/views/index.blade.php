@@ -91,11 +91,8 @@
                             <h4 class="sb-title">Community Members</h4>
                             @foreach ($members as $member)
                             <div class="celeb-item">
-                                @if ($member->avatar)
                                 <a href="/member/{{ $member->username }}"><img src="{{ $member->avatar ? '/storage/$member->avatar' :asset('images/uploads/user-img.png') }}" alt="" width="70" height="70"></a>
-                                @else
-                                <a href="/member/{{ $member->username }}"><img src="images/uploads/ava4.jpg" alt="" width="70" height="70"></a>
-                                @endif
+
                                 <div class="celeb-author">
                                     <h6><a href="/member/{{ $member->username }}">{{ $member->username }}</a></h6>
                                     <span>{{ $member->IsAdmin ? 'Admin':'Member' }}</span>
