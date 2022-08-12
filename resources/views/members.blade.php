@@ -23,14 +23,9 @@
                     </div>
                     @foreach ($members as $member)
                     <div class="movie-item-style-2">
-                        <img src="{{ $movie->thumbnail? '/storage/$member->avatar': asset('images/uploads/user-img.png') }}" alt="{{ $movie->name }}">
+                        <img src="{{ $member->thumbnail? '/storage/$member->avatar': asset('images/uploads/user-img.png') }}" alt="{{ $member->username }}">
                         <div class="mv-item-infor">
                             <h6><a href="/member/{{ $member->username}}">{{ $member->username }} </a></h6>
-                            <p class="blue"><a href="/category/{{ $movie->genre->name }}">{{ $movie->genre->name }}</a></p>
-                            <p class="describe">{{Str::limit($movie->description, 150)}}</p>
-                            <p class="run-time"> Release : {{ date('d F , Y', strtotime($movie->released_date))}}</p>
-                            <p>Director: <a href="#">{{ $movie->director }}</a></p>
-                            <p>writer: <a href="#">{{ $movie->writer }}</a> </p>
                         </div>
                     </div>
                     @endforeach
