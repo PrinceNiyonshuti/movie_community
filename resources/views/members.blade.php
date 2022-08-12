@@ -21,6 +21,19 @@
                     <div class="topbar-filter">
                         <p>Found <span>{{ $members->count() }} members</span> in total</p>
                     </div>
+                    @foreach ($members as $member)
+                    <div class="movie-item-style-2">
+                        <img src="{{ asset('images/uploads/poster1.jpg') }}" alt="{{ $member->name }}">
+                        <div class="mv-item-infor">
+                            <h6><a href="/movies/{{ $movie->name}}">{{ $movie->name }} <span>( {{ date('Y', strtotime($movie->released_date))}} )</span></a></h6>
+                            <p class="blue"><a href="/category/{{ $movie->genre->name }}">{{ $movie->genre->name }}</a></p>
+                            <p class="describe">{{Str::limit($movie->description, 150)}}</p>
+                            <p class="run-time"> Release : {{ date('d F , Y', strtotime($movie->released_date))}}</p>
+                            <p>Director: <a href="#">{{ $movie->director }}</a></p>
+                            <p>writer: <a href="#">{{ $movie->writer }}</a> </p>
+                        </div>
+                    </div>
+                    @endforeach
                 </div>
             </div>
         </div>
