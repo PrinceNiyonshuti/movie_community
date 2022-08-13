@@ -30,7 +30,7 @@ class FavoriteController extends Controller
 
     public function favorites()
     {
-        # code...
+        return view('account.favorite');
     }
 
 }
