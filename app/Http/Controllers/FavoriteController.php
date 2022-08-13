@@ -28,5 +28,9 @@ class FavoriteController extends Controller
 
     }
 
-    
+    public function favorites()
+    {
+        # code...
+    }
+
 }
