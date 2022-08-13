@@ -19,6 +19,9 @@
             <div class="row ipad-width2">
                 <x-sideBar />
                 <div class="col-md-9 col-sm-12 col-xs-12">
+                    <div class="topbar-filter user">
+                        <p>Found <span>3 movies</span> in total</p>
+                    </div>
                 </div>
             </div>
         </div>
