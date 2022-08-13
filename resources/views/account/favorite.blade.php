@@ -14,4 +14,13 @@
             </div>
         </div>
     </div>
+    <div class="page-single">
+        <div class="container">
+            <div class="row ipad-width2">
+                <x-sideBar />
+                <div class="col-md-9 col-sm-12 col-xs-12">
+                </div>
+            </div>
+        </div>
+    </div>
 </x-layout>
