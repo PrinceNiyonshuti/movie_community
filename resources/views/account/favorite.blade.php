@@ -7,7 +7,7 @@
                         <x-profile-name />
                         <ul class="breadcumb">
                             <li class="active"><a href="/">Home</a></li>
-                            <li> <span class="ion-ios-arrow-right"></span>Dashboard</li>
+                            <li> <span class="ion-ios-arrow-right"></span>Favorites</li>
                         </ul>
                     </div>
                 </div>
