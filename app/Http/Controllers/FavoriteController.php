@@ -30,7 +30,7 @@ class FavoriteController extends Controller
 
     public function favorites()
     {
-        return view('account.favorite');
+        return view('account.favorite', ['movies' => auth()->user()->movies]);
     }
 
 }
