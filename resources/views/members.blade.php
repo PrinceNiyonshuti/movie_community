@@ -24,10 +24,7 @@
                     <div class="flex-wrap-movielist grid-fav">
                         @foreach ($members as $member)
                         <div class="movie-item-style-2 movie-item-style-1 style-3">
-                            <img src="{{ $member->avatar? '/storage/$member->avatar':asset('images/uploads/mv-it4.jpg') }}" width="160" height="224" alt="{{ $member->username}}">
-                            <!-- <div class="hvr-inner">
-                                <a href="/member/{{ $member->username}}"> View activity <i class="ion-android-arrow-dropright"></i> </a>
-                            </div> -->
+                            <img src="{{ $member->avatar? '/storage/$member->avatar':asset('images/uploads/user-img.png') }}" width="160" height="224" alt="{{ $member->username}}">
                             <div class="mv-item-infor">
                                 <h6><a href="/member/{{ $member->username}}">{{ $member->username }}</a></h6>
                             </div>

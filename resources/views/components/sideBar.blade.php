@@ -17,7 +17,7 @@
                 @can('Admin')
                     <li class="{{ request()->is('genre') ? 'active' : '' }}"><a href="/genre">Genres</a></li>
                 @endcan
-                <li class="{{ request()->is('favorite') ? 'active' : '' }}"><a href="/favorite">Favorite movies</a></li>
+                <li class="{{ request()->is('favorite') ? 'active' : '' }}"><a href="/favorites">Favorite movies</a></li>
             </ul>
         </div>
         <div class="user-fav">

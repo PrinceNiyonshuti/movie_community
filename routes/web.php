@@ -63,6 +63,7 @@ Route::get('/category/{genre:name}', [GenreController::class, 'movies']);
 // Favorite actions
 Route::post('/favorite/{movie:name}', [FavoriteController::class, 'store']);
 Route::post('/unFavorite/{movie:name}', [FavoriteController::class, 'destroy']);
+Route::get('/favorites', [FavoriteController::class, 'favorites']);
 
 // Subscriber routes
 Route::post('/subscribe', [SubscriberController::class, 'store']);
