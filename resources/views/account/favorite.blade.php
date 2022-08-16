@@ -29,7 +29,7 @@
                             <div class="hvr-inner">
                                 <a href="/movies/{{ $movie->name}}"> Read more <i class="ion-android-arrow-dropright"></i> </a>
                             </div>
-                            <div class="mv-item-infor">
+                            <div class="mv-item-info">
                                 <h6><a href="/movies/{{ $movie->name}}">{{ $movie->name }}</a></h6>
                                 <p class="yellow"><a href="/category/{{ $movie->genre->name }}">{{ $movie->genre->name }}</a></p>
                             </div>

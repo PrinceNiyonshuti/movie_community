@@ -30,7 +30,9 @@ class FavoriteController extends Controller
 
     public function favorites()
     {
-        return view('account.favorite', ['movies' => auth()->user()->favorite_movies]);
+        // $movies = Movie::where('id', auth()->user()->favorite_movies->user_id)->get();
+        // dd(auth()->user()->favorite_movies);
+        return view('account.favorite', ['movies' => auth()->user()->movies]);
     }
 
 }
