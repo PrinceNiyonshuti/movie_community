@@ -22,6 +22,7 @@ before starting to run the project
 
 ## Requirements
 
+- Php V8 or greater
 - create your .env file 
 - create your database
 - Xampp or apache server
