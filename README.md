@@ -29,12 +29,12 @@ before starting to run the project
 
 ## after run these script 
 
-    Run composer install
-    Run cp .env.example .env or copy .env.example .env
-    Run php artisan key:generate
-    Run php artisan migrate
-    Run php artisan db:seed
-    Run php artisan storage:link
+    composer install
+    cp .env.example .env or copy .env.example .env
+    php artisan key:generate
+    php artisan migrate
+    php artisan db:seed
+    php artisan storage:link
 
 ## Feedback and issues
 
