@@ -4,6 +4,8 @@
 
 # Movie Community  
 
+![image](https://user-images.githubusercontent.com/46887030/185582484-5adfa1da-46ef-4ec6-a225-a962bc1614cb.png)
+
 Movie community will facilitate the passion for movie making within our community ,To our knowledge we haven’t seen this done before and are looking to construct the simplest way to accomplish it.  A film can be as complicated or simple as you make it and we are trying to find the right shoe to fit around what a community can produce without sacrificing quality.
 
 ## Coding style and standards
