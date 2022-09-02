@@ -34,6 +34,9 @@
                                 <div class="col-md-4 form-it">
                                     <a href="#"><img src="{{ auth()->user()->avatar? '/storage/'.auth()->user()->avatar:'https://randomuser.me/api/portraits/women/81.jpg'}}" width="120" alt=""><br></a><br>
                                     <input type="file" name="avatar" value="{{ old('avatar') }}">
+                                    @csrf
+                                    <input type="file" name="avatar" id="input" onchange="readURL(this);" style="display:none;">
+                                    <button style="display:none;" id="save" type="submit" class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-full text-white profile-save-btn">Save</button>
                                 </div>
                             </form>
                             <form method="POST" action="/account/{{ auth()->user()->id }}" class="user">
@@ -67,3 +70,25 @@
         </div>
     </div>
 </x-layout>
+<script>
+    function readURL(input) {
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+            reader.onload = function(e) {
+                $('#blah')
+                    .attr('src', e.target.result)
+                    .width(130)
+                    .height(130);
+            };
+            reader.readAsDataURL(input.files[0]);
+        }
+        var imageUpload = document.getElementById("imageUpload");
+        var imageSave = document.getElementById("save");
+        if (imageSave.style.display === "none") {
+            imageSave.style.display = "inline-flex";
+            imageUpload.style.display = "none";
+        } else {
+            imageSave.style.display = "none";
+        }
+    }
+</script>
