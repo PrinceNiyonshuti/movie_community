@@ -32,11 +32,11 @@
                         <div class="row">
                             <form method="POST" action="/account/{{ auth()->user()->id }}" enctype="multipart/form-data" class="user">
                                 <div class="col-md-4 form-it">
-                                    <a href="#"><img src="/storage/{{ auth()->user()->avatar }}" width="120" alt=""><br></a><br>
+                                    <a href="#"><img src="{{ auth()->user()->avatar? '/storage/'.auth()->user()->avatar:'https://randomuser.me/api/portraits/women/81.jpg'}}" width="120" alt=""><br></a><br>
                                     <input type="file" name="avatar" value="{{ old('avatar') }}">
                                 </div>
                             </form>
-                            <form method="POST" action="/account/{{ auth()->user()->id }}"  class="user">
+                            <form method="POST" action="/account/{{ auth()->user()->id }}" class="user">
                                 <div class="col-md-8 form-it">
                                     <label>Username</label>
                                     <input type="text" name="username" value="{{ auth()->user()->username }}" placeholder="Prince Dev" required>

@@ -18,7 +18,7 @@ class DashboardController extends Controller
     {
         return view('account.profile');
     }
-    public function update(Request $request, $id)
+    public function update(Request $request, User $user)
     {
         if (auth()->user()) {
             auth()->user()->username = $request['username'];
