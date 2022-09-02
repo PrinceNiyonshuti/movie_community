@@ -26,14 +26,17 @@
                             <p>{{ session('success') }}</p>
                         </div>
                         @endif
-                        <form method="POST" action="/account/{{ Auth::user()->id }}" enctype="multipart/form-data" class="user">
-                            <h4>Profile details</h4>
-                            @csrf
-                            <div class="row">
+
+                        <h4>Profile details</h4>
+                        @csrf
+                        <div class="row">
+                            <form method="POST" action="/account/{{ Auth::user()->id }}" enctype="multipart/form-data" class="user">
                                 <div class="col-md-4 form-it">
                                     <a href="#"><img src="/storage/{{ Auth::user()->avatar }}" width="120" alt=""><br></a><br>
                                     <input type="file" name="avatar" value="{{ old('avatar') }}">
                                 </div>
+                            </form>
+                            <form method="POST" action="/account/{{ Auth::user()->id }}"  class="user">
                                 <div class="col-md-8 form-it">
                                     <label>Username</label>
                                     <input type="text" name="username" value="{{ Auth::user()->username }}" placeholder="Prince Dev" required>
@@ -47,16 +50,16 @@
                                     <label>Last Name</label>
                                     <input type="text" name="lastName" value="{{ Auth::user()->lastName }}" placeholder="enter your last name" required>
                                 </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-2">
                             </div>
-                            <div class="row">
-                                <div class="col-md-2">
-                                </div>
-                                <div class="col-md-8">
-                                    <input class="submit" type="submit" value="Update profile">
-                                </div>
-                                <div class="col-md-2">
-                                </div>
+                            <div class="col-md-8">
+                                <input class="submit" type="submit" value="Update profile">
                             </div>
+                            <div class="col-md-2">
+                            </div>
+                        </div>
                         </form>
                     </div>
                 </div>

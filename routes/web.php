@@ -70,3 +70,5 @@ Route::post('/subscribe', [SubscriberController::class, 'store']);
 
 // Members routes
 Route::get('/members', [GuestController::class, 'list']);
+
+// profile route
