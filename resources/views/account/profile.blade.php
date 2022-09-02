@@ -30,25 +30,25 @@
                         <h4>Profile details</h4>
                         @csrf
                         <div class="row">
-                            <form method="POST" action="/account/{{ Auth::user()->id }}" enctype="multipart/form-data" class="user">
+                            <form method="POST" action="/account/{{ auth()->user()->id }}" enctype="multipart/form-data" class="user">
                                 <div class="col-md-4 form-it">
-                                    <a href="#"><img src="/storage/{{ Auth::user()->avatar }}" width="120" alt=""><br></a><br>
+                                    <a href="#"><img src="/storage/{{ auth()->user()->avatar }}" width="120" alt=""><br></a><br>
                                     <input type="file" name="avatar" value="{{ old('avatar') }}">
                                 </div>
                             </form>
-                            <form method="POST" action="/account/{{ Auth::user()->id }}"  class="user">
+                            <form method="POST" action="/account/{{ auth()->user()->id }}"  class="user">
                                 <div class="col-md-8 form-it">
                                     <label>Username</label>
-                                    <input type="text" name="username" value="{{ Auth::user()->username }}" placeholder="Prince Dev" required>
+                                    <input type="text" name="username" value="{{ auth()->user()->username }}" placeholder="Prince Dev" required>
 
                                     <label>Email Address</label>
-                                    <input type="email" name="email " value="{{ Auth::user()->email }}" placeholder="enter your email" required>
+                                    <input type="email" name="email " value="{{ auth()->user()->email }}" placeholder="enter your email" required>
 
                                     <label>First Name</label>
-                                    <input type="text" name="firstName" value="{{ Auth::user()->firstName }}" placeholder="enter your first name" required>
+                                    <input type="text" name="firstName" value="{{ auth()->user()->firstName }}" placeholder="enter your first name" required>
 
                                     <label>Last Name</label>
-                                    <input type="text" name="lastName" value="{{ Auth::user()->lastName }}" placeholder="enter your last name" required>
+                                    <input type="text" name="lastName" value="{{ auth()->user()->lastName }}" placeholder="enter your last name" required>
                                 </div>
                         </div>
                         <div class="row">
