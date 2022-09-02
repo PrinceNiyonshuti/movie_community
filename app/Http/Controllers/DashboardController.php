@@ -20,7 +20,6 @@ class DashboardController extends Controller
     }
     public function update(Request $request, $id)
     {
-        $existingMember =  User::find($id);
         if ($existingMember) {
             $existingMember->username = $request['username'];
             $existingMember->firstName = $request['firstName'];
