@@ -26,37 +26,43 @@
                             <p>{{ session('success') }}</p>
                         </div>
                         @endif
-                        <form method="POST" action="/account/{{ Auth::user()->id }}" enctype="multipart/form-data" class="user">
-                            <h4>Profile details</h4>
-                            @csrf
-                            <div class="row">
+
+                        <h4>Profile details</h4>
+                        @csrf
+                        <div class="row">
+                            <form method="POST" action="/account/{{ auth()->user()->id }}" enctype="multipart/form-data" class="user">
                                 <div class="col-md-4 form-it">
-                                    <a href="#"><img src="/storage/{{ Auth::user()->avatar }}" width="120" alt=""><br></a><br>
+                                    <a href="#"><img src="{{ auth()->user()->avatar? '/storage/'.auth()->user()->avatar:'https://randomuser.me/api/portraits/women/81.jpg'}}" width="120" alt=""><br></a><br>
                                     <input type="file" name="avatar" value="{{ old('avatar') }}">
+                                    @csrf
+                                    <input type="file" name="avatar" id="input" onchange="readURL(this);" style="display:none;">
+                                    <button style="display:none;" id="save" type="submit" class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-full text-white profile-save-btn">Save</button>
                                 </div>
+                            </form>
+                            <form method="POST" action="/account/{{ auth()->user()->id }}" class="user">
                                 <div class="col-md-8 form-it">
                                     <label>Username</label>
-                                    <input type="text" name="username" value="{{ Auth::user()->username }}" placeholder="Prince Dev" required>
+                                    <input type="text" name="username" value="{{ auth()->user()->username }}" placeholder="Prince Dev" required>
 
                                     <label>Email Address</label>
-                                    <input type="email" name="email " value="{{ Auth::user()->email }}" placeholder="enter your email" required>
+                                    <input type="email" name="email " value="{{ auth()->user()->email }}" placeholder="enter your email" required>
 
                                     <label>First Name</label>
-                                    <input type="text" name="firstName" value="{{ Auth::user()->firstName }}" placeholder="enter your first name" required>
+                                    <input type="text" name="firstName" value="{{ auth()->user()->firstName }}" placeholder="enter your first name" required>
 
                                     <label>Last Name</label>
-                                    <input type="text" name="lastName" value="{{ Auth::user()->lastName }}" placeholder="enter your last name" required>
+                                    <input type="text" name="lastName" value="{{ auth()->user()->lastName }}" placeholder="enter your last name" required>
                                 </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-2">
                             </div>
-                            <div class="row">
-                                <div class="col-md-2">
-                                </div>
-                                <div class="col-md-8">
-                                    <input class="submit" type="submit" value="Update profile">
-                                </div>
-                                <div class="col-md-2">
-                                </div>
+                            <div class="col-md-8">
+                                <input class="submit" type="submit" value="Update profile">
                             </div>
+                            <div class="col-md-2">
+                            </div>
+                        </div>
                         </form>
                     </div>
                 </div>
@@ -64,3 +70,25 @@
         </div>
     </div>
 </x-layout>
+<script>
+    function readURL(input) {
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+            reader.onload = function(e) {
+                $('#blah')
+                    .attr('src', e.target.result)
+                    .width(130)
+                    .height(130);
+            };
+            reader.readAsDataURL(input.files[0]);
+        }
+        var imageUpload = document.getElementById("imageUpload");
+        var imageSave = document.getElementById("save");
+        if (imageSave.style.display === "none") {
+            imageSave.style.display = "inline-flex";
+            imageUpload.style.display = "none";
+        } else {
+            imageSave.style.display = "none";
+        }
+    }
+</script>
