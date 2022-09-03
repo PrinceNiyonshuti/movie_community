@@ -32,7 +32,7 @@
                         <div class="row">
                             <form method="POST" action="/account/{{ auth()->user()->id }}" enctype="multipart/form-data">
                                 <div class="col-md-4 ">
-                                    <img id="blah" src="{{ auth()->user()->avatar? '/storage/'.auth()->user()->avatar:'https://randomuser.me/api/portraits/women/81.jpg'}}" width="120" alt=""><br></a><br>
+                                    <img id="blah" src="{{ auth()->user()->avatar? '/storage/'.auth()->user()->avatar:'https://randomuser.me/api/portraits/women/81.jpg'}}" width="200" alt=""><br></a><br>
                                     @csrf
                                     <label for="input" id="imageUpload">
                                         <svg width="21" height="18" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -82,8 +82,8 @@
             reader.onload = function(e) {
                 $('#blah')
                     .attr('src', e.target.result)
-                    .width(130)
-                    .height(130);
+                    .width(200)
+                    .height(200);
             };
             reader.readAsDataURL(input.files[0]);
         }
