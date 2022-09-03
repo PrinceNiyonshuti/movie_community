@@ -25,8 +25,7 @@ class DashboardController extends Controller
                 $attributes = $request->validate([
                     'username' => 'required',
                     'firstName' => 'required',
-                    'lastName' => 'required',
-                    'email' => ['required', 'email', Rule::unique('users')->ignore(auth()->user()->id)],
+                    'lastName' => 'required'
                 ]);
                 $user->update($attributes);
                 // if (isset($request['avatar'])) {

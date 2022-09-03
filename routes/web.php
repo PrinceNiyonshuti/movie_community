@@ -36,7 +36,7 @@ Route::post('/logout', [AuthController::class, 'destroy'])->middleware('auth');
 Route::middleware('auth')->prefix('/account')->group(function () {
     Route::get('', [DashboardController::class, 'index']);
     Route::get('/profile', [DashboardController::class, 'create']);
-    Route::post('/{user}', [DashboardController::class, 'update']);
+    Route::post('/update', [DashboardController::class, 'update']);
 });
 
 // Movie actions

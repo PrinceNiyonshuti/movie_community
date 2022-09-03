@@ -30,7 +30,7 @@
                         <h4>Profile details</h4>
                         @csrf
                         <div class="row">
-                            <form method="POST" action="/account/{{ auth()->user()->id }}" enctype="multipart/form-data">
+                            <form method="POST" action="/account/update" enctype="multipart/form-data">
                                 <div class="col-md-4 ">
                                     <img id="blah" src="{{ auth()->user()->avatar? '/storage/'.auth()->user()->avatar:'https://randomuser.me/api/portraits/women/81.jpg'}}" width="200" alt=""><br></a><br>
                                     @csrf
@@ -44,7 +44,7 @@
                                     <button style="display:none;" id="save" type="submit" class="submit">Save</button>
                                 </div>
                             </form>
-                            <form method="POST" action="/account/{{ auth()->user()->id }}" class="user">
+                            <form method="POST" action="/account/update" class="user">
                                 <div class="col-md-8 form-it">
                                     <label>Username</label>
                                     <input type="text" name="username" value="{{ auth()->user()->username }}" placeholder="Prince Dev" required>
