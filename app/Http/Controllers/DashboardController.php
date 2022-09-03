@@ -20,6 +20,7 @@ class DashboardController extends Controller
     }
     public function update(Request $request, User $user)
     {
+        dd('dasdasd');
         if ($request->has('username')) {
             if (auth()->user()) {
                 $attributes = $request->validate([

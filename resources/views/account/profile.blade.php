@@ -45,6 +45,7 @@
                                 </div>
                             </form>
                             <form method="POST" action="/account/update" class="user">
+                                @csrf
                                 <div class="col-md-8 form-it">
                                     <label>Username</label>
                                     <input type="text" name="username" value="{{ auth()->user()->username }}" placeholder="Prince Dev" required>
