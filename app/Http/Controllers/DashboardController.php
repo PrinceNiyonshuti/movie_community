@@ -20,21 +20,23 @@ class DashboardController extends Controller
     }
     public function update(Request $request, User $user)
     {
-        dd('dasdasd');
         if ($request->has('username')) {
             if (auth()->user()) {
                 $attributes = $request->validate([
                     'username' => 'required',
                     'firstName' => 'required',
-                    'lastName' => 'required'
+                    'lastName' => 'required',
+                    'email' => 'required',
                 ]);
                 $user->update($attributes);
-                // if (isset($request['avatar'])) {
-                //     auth()->user()->avatar = $request->file('avatar')->store('avatars');
-                // }
-                // auth()->user()->save();
             }
+
+            return redirect('/account/profile')->with('success', 'Profile updated successfully!');
         }
-        return redirect('/account/profile')->with('success', 'Profile updated successfully!');
+
+        if($request->has('avatar')){
+            
+        }
+
     }
 }

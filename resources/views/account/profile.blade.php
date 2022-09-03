@@ -51,7 +51,7 @@
                                     <input type="text" name="username" value="{{ auth()->user()->username }}" placeholder="Prince Dev" required>
 
                                     <label>Email Address</label>
-                                    <input type="email" name="email " value="{{ auth()->user()->email }}" placeholder="enter your email" required>
+                                    <input type="email" name="email" value="{{ auth()->user()->email }}" placeholder="enter your email" required>
 
                                     <label>First Name</label>
                                     <input type="text" name="firstName" value="{{ auth()->user()->firstName }}" placeholder="enter your first name" required>
