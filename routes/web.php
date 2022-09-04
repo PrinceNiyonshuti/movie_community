@@ -71,4 +71,8 @@ Route::post('/subscribe', [SubscriberController::class, 'store']);
 // Members routes
 Route::get('/members', [GuestController::class, 'list']);
 
-// profile route
+// resources pages
+
+Route::get('contact', function () {
+    return view('pages.contact');
+})->name('contact');
