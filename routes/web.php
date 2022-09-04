@@ -76,3 +76,7 @@ Route::get('/members', [GuestController::class, 'list']);
 Route::get('contact', function () {
     return view('pages.contact');
 })->name('contact');
+
+Route::get('terms', function () {
+    return view('pages.terms');
+})->name('terms');
