@@ -191,7 +191,7 @@
                 <div class="flex-child-ft item2">
                     <h4>Resources</h4>
                     <ul>
-                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="{{route('contact')}}">Contact Us</a></li>
                         <li><a href="#">Blog</a></li>
                     </ul>
                 </div>
