@@ -199,7 +199,7 @@
                     <h4>Legal</h4>
                     <ul>
                         <li><a href="{{route('terms')}}">Terms of Use</a></li>
-                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="{{route('privacy')}}">Privacy Policy</a></li>
                         <li><a href="#">Security</a></li>
                     </ul>
                 </div>
