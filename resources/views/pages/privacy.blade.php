@@ -14,4 +14,15 @@
             </div>
         </div>
     </div>
+    <div class="movie-items">
+        <div class="container">
+            <div class="row ipad-width2">
+                <div class="col-md-8 col-sm-12 col-xs-12">
+                    <div class="flex-wrap-movielist grid-fav">
+                        <p>Test</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </x-layout>
