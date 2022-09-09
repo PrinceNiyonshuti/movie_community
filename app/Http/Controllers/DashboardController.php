@@ -30,12 +30,11 @@ class DashboardController extends Controller
                 ]);
                 $user->update($attributes);
             }
-
             return redirect('/account/profile')->with('success', 'Profile updated successfully!');
         }
 
         if($request->has('avatar')){
-            
+
         }
 
     }
