@@ -24,7 +24,7 @@
                     <div class="flex-wrap-movielist grid-fav">
                         @foreach ($members as $member)
                         <div class="movie-item-style-2 movie-item-style-1 style-3">
-                            <img src="{{ $member->avatar? '/storage/$member->avatar':asset('images/uploads/user-img.png') }}" width="160" height="224" alt="{{ $member->username}}">
+                            <img src="{{ $member->avatar? '/storage/$member->avatar':asset('images/uploads/user-img.png') }}" style="height: 160px;" alt="{{ $member->username}}">
                             <div class="mv-item-infor">
                                 <h6><a href="/member/{{ $member->username}}">{{ $member->username }}</a></h6>
                             </div>
@@ -34,6 +34,5 @@
                 </div>
             </div>
         </div>
-        <h1>Coming soon</h1>
     </div>
 </x-layout>
