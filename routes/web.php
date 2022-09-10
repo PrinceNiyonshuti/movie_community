@@ -80,3 +80,7 @@ Route::get('contact', function () {
 Route::get('terms', function () {
     return view('pages.terms');
 })->name('terms');
+
+Route::get('privacy', function () {
+    return view('pages.privacy');
+})->name('privacy');
