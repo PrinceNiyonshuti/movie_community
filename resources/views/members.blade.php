@@ -57,9 +57,9 @@
                         @foreach ($members as $member)
                         <div class="col-md-4">
                             <div class="ceb-item-style-2">
-                                <img src="{{ $member->avatar? '/storage/$member->avatar':asset('images/uploads/user-img.png') }}" alt="">
+                                <img src="{{ $member->avatar? '/storage/$member->avatar':asset('images/uploads/ceb21.jpg') }}" alt="">
                                 <div class="ceb-infor">
-                                    <h2><a href="celebritysingle.html">Leonardo DiCaprio</a></h2>
+                                    <h2><a href="/member/{{ $member->username}}">{{ $member->username }}</a></h2>
                                     <span>actor, uk</span>
                                 </div>
                             </div>
