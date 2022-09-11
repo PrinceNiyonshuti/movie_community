@@ -57,7 +57,7 @@
                         @foreach ($members as $member)
                         <div class="col-md-4">
                             <div class="ceb-item-style-2">
-                                <img src="images/uploads/ceb21.jpg" alt="">
+                                <img src="{{ $member->avatar? '/storage/$member->avatar':asset('images/uploads/user-img.png') }}" alt="">
                                 <div class="ceb-infor">
                                     <h2><a href="celebritysingle.html">Leonardo DiCaprio</a></h2>
                                     <span>actor, uk</span>
