@@ -14,27 +14,6 @@
             </div>
         </div>
     </div>
-    <div class="movie-items">
-        <div class="container">
-            <div class="row ipad-width2">
-                <div class="col-md-8 col-sm-12 col-xs-12">
-                    <div class="topbar-filter">
-                        <p>Found <span>{{ $members->count() }} members</span> in total</p>
-                    </div>
-                    <div class="flex-wrap-movielist grid-fav">
-                        @foreach ($members as $member)
-                        <div class="movie-item-style-2 movie-item-style-1 style-3">
-                            <img src="{{ $member->avatar? '/storage/$member->avatar':asset('images/uploads/user-img.png') }}" style="height: 160px;" alt="{{ $member->username}}">
-                            <div class="mv-item-infor">
-                                <h6><a href="/member/{{ $member->username}}">{{ $member->username }}</a></h6>
-                            </div>
-                        </div>
-                        @endforeach
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
     <div class="page-single">
         <div class="container">
             <div class="row ipad-width2">
@@ -134,37 +113,6 @@
                         </div>
                         <div class="ads">
                             <img src="images/uploads/ads1.png" alt="">
-                        </div>
-                        <div class="celebrities">
-                            <h4 class="sb-title">featured celebrity</h4>
-                            <div class="celeb-item">
-                                <a href="#"><img src="images/uploads/ava1.jpg" alt=""></a>
-                                <div class="celeb-author">
-                                    <h6><a href="#">Samuel N. Jack</a></h6>
-                                    <span>Actor</span>
-                                </div>
-                            </div>
-                            <div class="celeb-item">
-                                <a href="#"><img src="images/uploads/ava2.jpg" alt=""></a>
-                                <div class="celeb-author">
-                                    <h6><a href="#">Benjamin Carroll</a></h6>
-                                    <span>Actor</span>
-                                </div>
-                            </div>
-                            <div class="celeb-item">
-                                <a href="#"><img src="images/uploads/ava3.jpg" alt=""></a>
-                                <div class="celeb-author">
-                                    <h6><a href="#">Beverly Griffin</a></h6>
-                                    <span>Actor</span>
-                                </div>
-                            </div>
-                            <div class="celeb-item">
-                                <a href="#"><img src="images/uploads/ava4.jpg" alt=""></a>
-                                <div class="celeb-author">
-                                    <h6><a href="#">Justin Weaver</a></h6>
-                                    <span>Actor</span>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>
