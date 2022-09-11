@@ -40,7 +40,7 @@
             <div class="row ipad-width2">
                 <div class="col-md-9 col-sm-12 col-xs-12">
                     <div class="topbar-filter">
-                        <p class="pad-change">Found <span>{{  $members->count()  }} members</span></p>
+                        <p class="pad-change">Found <span>{{ $members->count()  }} members</span></p>
                         <label>Sort by:</label>
                         <select>
                             <option value="popularity">Popularity Descending</option>
@@ -54,6 +54,7 @@
                         <a href="celebritygrid02.html" class="grid"><i class="ion-grid active"></i></a>
                     </div>
                     <div class="row">
+                        @foreach ($members as $member)
                         <div class="col-md-4">
                             <div class="ceb-item-style-2">
                                 <img src="images/uploads/ceb21.jpg" alt="">
@@ -63,24 +64,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-4">
-                            <div class="ceb-item-style-2">
-                                <img src="images/uploads/ceb22.jpg" alt="">
-                                <div class="ceb-infor">
-                                    <h2><a href="celebritysingle.html">Meryl Streep</a></h2>
-                                    <span>actor, Iran</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="ceb-item-style-2">
-                                <img src="images/uploads/ceb23.jpg" alt="">
-                                <div class="ceb-infor">
-                                    <h2><a href="celebritysingle.html">Tom Hanks</a></h2>
-                                    <span>Director, Sweden</span>
-                                </div>
-                            </div>
-                        </div>
+                        @endforeach
                     </div>
                     <div class="topbar-filter">
                         <label>Reviews per page:</label>
