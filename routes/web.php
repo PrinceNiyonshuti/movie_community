@@ -1,15 +1,16 @@
 <?php
 
+use App\Models\User;
+use App\Models\Movie;
+use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
-use App\Http\Controllers\DashboardController;
-use App\Http\Controllers\FavoriteController;
 use App\Http\Controllers\GenreController;
 use App\Http\Controllers\GuestController;
 use App\Http\Controllers\MovieController;
+use App\Http\Controllers\FavoriteController;
+use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\SubscriberController;
-use App\Models\Movie;
-use App\Models\User;
-use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\LocalizationController;
 
 /*
 |--------------------------------------------------------------------------
@@ -21,6 +22,8 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+
+Route::get('locale/{locale}', [LocalizationController::class, 'index'])->name('locale.change');
 
 Route::get('/', function () {
     return view('index', [

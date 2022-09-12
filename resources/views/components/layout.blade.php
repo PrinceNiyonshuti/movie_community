@@ -17,6 +17,8 @@
     <!-- CSS files -->
     <link rel="stylesheet" href="{{ asset('css/plugins.css') }}">
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+    <!-- flags -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@6.6.6/css/flag-icons.min.css" />
     <style>
         .sub {
             font-family: "Dosis", sans-serif;
@@ -129,13 +131,27 @@
                         </li>
                         <li class="dropdown first">
                             <a class="btn btn-default" href="/">
-                                Home
+                                {{ __('navigation.home') }}
                             </a>
                         </li>
                         <li class="dropdown first">
                             <a class="btn btn-default" href="/movies">
-                                All Movies
+                                {{ __('navigation.all_movies') }}
                             </a>
+                        </li>
+                        <li class="dropdown first">
+                            @if ( Config::get('languages')[App::getLocale()] != "" || !is_null( Config::get('languages')[App::getLocale()]) )
+                            <a class="btn btn-default dropdown-toggle lv1" data-toggle="dropdown">
+                                <span class="fi fi-{{Config::get('languages')[App::getLocale()]['flag-icon']}}"></span> {{ Config::get('languages')[App::getLocale()]['display'] }} &nbsp;<i class="fa fa-angle-down" aria-hidden="true"></i>
+                            </a>
+                            @endif
+                            <ul class="dropdown-menu level1">
+                                @foreach (Config::get('languages') as $locale => $language)
+                                @if ($locale != App::getLocale())
+                                <li><a href="{{ route('locale.change', $locale) }}"><span class="fi fi-{{$language['flag-icon']}}"></span>{{$language['display']}}</a></li>
+                                @endif
+                                @endforeach
+                            </ul>
                         </li>
                         @auth
                         <li class="dropdown first">
