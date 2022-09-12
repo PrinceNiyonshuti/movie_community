@@ -137,6 +137,14 @@
                                 All Movies
                             </a>
                         </li>
+                        <li class="dropdown first">
+                            <a class="btn btn-default dropdown-toggle lv1" data-toggle="dropdown">
+                                EN &nbsp;<i class="fa fa-angle-down" aria-hidden="true"></i>
+                            </a>
+                            <ul class="dropdown-menu level1">
+                                <li><a href="index-2.html">KINY</a></li>
+                            </ul>
+                        </li>
                         @auth
                         <li class="dropdown first">
                             <a class="btn btn-default" href="/account">
