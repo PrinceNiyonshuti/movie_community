@@ -188,7 +188,7 @@
             <form action="/movies/search" method="post">
                 @csrf
                 <div class="top-search">
-                    <input type="text" name="movie_name" placeholder="Search for a movie, TV Show or celebrity that you are looking for">
+                    <input type="text" name="movie_name" placeholder='{{ __('navigation.search_home') }}'>
                 </div>
             </form>
 

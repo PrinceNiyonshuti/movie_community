@@ -4,7 +4,7 @@
         <div class="container">
             <div class="row">
                 <div class="social-link">
-                    <p>Follow us: </p>
+                    <p>{{ __('navigation.follow_us') }}: </p>
                     <a href="#"><i class="ion-social-facebook"></i></a>
                     <a href="#"><i class="ion-social-twitter"></i></a>
                     <a href="#"><i class="ion-social-googleplus"></i></a>
@@ -35,7 +35,7 @@
             <div class="row ipad-width">
                 <div class="col-md-8">
                     <div class="title-hd">
-                        <h2>Latest</h2>
+                        <h2>{{ __('navigation.latest') }}</h2>
                         <a href="/movies" class="viewall">View all <i class="ion-ios-arrow-right"></i></a>
                     </div>
                     <div class="flex-wrap-movielist grid-fav">

@@ -6,4 +6,6 @@ return [
     'search_home'       => 'Search for a movie , Tv Show or celebrity that you are looking for',
     'login'         => 'Login',
     'register'         => 'Register',
+    'follow_us'         => 'Follow Us',
+    'latest'         => 'Latest',
 ];
