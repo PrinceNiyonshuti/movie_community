@@ -12,4 +12,8 @@ return [
     'trending'         => 'Izikunzwe',
     'community_member'         => 'Abanyamuryango',
     'see_all_members'         => 'Reba abanyamuryango bose',
+    'resources'         => 'Izikenewe',
+    'legal'         => 'Amategeko',
+    'account'         => 'Konti',
+    'newsletter'         => 'Akanyamakuru',
 ];
