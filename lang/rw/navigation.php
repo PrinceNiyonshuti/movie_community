@@ -4,6 +4,6 @@ return [
     'home'          => 'Ahabanza',
     'all_movies'  => 'Film zose',
     'search_home'       => 'Search for a movie , Tv Show or celebrity that you are looking for',
-    'login'         => 'Login',
-    'register'         => 'Register',
+    'login'         => 'Injira',
+    'register'         => 'Iyandikishe',
 ];

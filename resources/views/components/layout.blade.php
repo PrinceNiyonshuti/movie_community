@@ -175,8 +175,8 @@
                         </form>
 
                         @else
-                        <li class="btn loginLink" style="margin-right: 10px;"><a href="#">Log In</a></li>
-                        <li class="btn signupLink"><a href="#">Register</a></li>
+                        <li class="btn loginLink" style="margin-right: 10px;"><a href="#">{{ __('navigation.login') }}</a></li>
+                        <li class="btn signupLink"><a href="#">{{ __('navigation.register') }}</a></li>
                         @endauth
                     </ul>
                 </div>
