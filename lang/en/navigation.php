@@ -11,4 +11,5 @@ return [
     'view_all'         => 'View All',
     'trending'         => 'Trending',
     'community_member'         => 'Community member',
+    'see_all_members'         => 'See all member',
 ];

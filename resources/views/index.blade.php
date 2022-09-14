@@ -99,7 +99,7 @@
                                 </div>
                             </div>
                             @endforeach
-                            <a href="/members" class="btn">See all members<i class="ion-ios-arrow-right"></i></a>
+                            <a href="/members" class="btn">{{ __('navigation.see_all_members') }}<i class="ion-ios-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
