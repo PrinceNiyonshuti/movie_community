@@ -9,4 +9,6 @@ return [
     'follow_us'         => 'Follow Us',
     'latest'         => 'Latest',
     'view_all'         => 'View All',
+    'trending'         => 'Trending',
+    'community_member'         => 'Community member',
 ];

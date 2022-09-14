@@ -53,7 +53,7 @@
                         @endforeach
                     </div>
                     <div class="title-hd">
-                        <h2>Trending</h2>
+                        <h2>{{ __('navigation.trending') }}</h2>
                         <a href="/movies" class="viewall">{{ __('navigation.view_all') }} <i class="ion-ios-arrow-right"></i></a>
                     </div>
                     <div class="tabs">
@@ -88,7 +88,7 @@
                             <img src="images/uploads/ads1.png" alt="" width="336" height="296">
                         </div>
                         <div class="celebrities">
-                            <h4 class="sb-title">Community Members</h4>
+                            <h4 class="sb-title">{{ __('navigation.community_member') }}</h4>
                             @foreach ($members as $member)
                             <div class="celeb-item">
                                 <a href="/member/{{ $member->username }}"><img src="{{ $member->avatar ? '/storage/$member->avatar' :asset('images/uploads/user-img.png') }}" alt="" width="70" height="70"></a>

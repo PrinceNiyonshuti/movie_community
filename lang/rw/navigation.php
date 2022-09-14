@@ -9,4 +9,6 @@ return [
     'follow_us'         => 'Dukurikirane kuri',
     'latest'         => 'Iziherutse',
     'view_all'         => 'Reba zose',
+    'trending'         => 'Izikunzwe',
+    'community_member'         => 'Abanyamuryango',
 ];
