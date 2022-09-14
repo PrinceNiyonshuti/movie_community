@@ -8,4 +8,5 @@ return [
     'register'         => 'Register',
     'follow_us'         => 'Follow Us',
     'latest'         => 'Latest',
+    'view_all'         => 'View All',
 ];

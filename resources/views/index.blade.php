@@ -36,7 +36,7 @@
                 <div class="col-md-8">
                     <div class="title-hd">
                         <h2>{{ __('navigation.latest') }}</h2>
-                        <a href="/movies" class="viewall">View all <i class="ion-ios-arrow-right"></i></a>
+                        <a href="/movies" class="viewall">{{ __('navigation.view_all') }} <i class="ion-ios-arrow-right"></i></a>
                     </div>
                     <div class="flex-wrap-movielist grid-fav">
                         @foreach ($movies as $movie)
@@ -54,7 +54,7 @@
                     </div>
                     <div class="title-hd">
                         <h2>Trending</h2>
-                        <a href="/movies" class="viewall">View all <i class="ion-ios-arrow-right"></i></a>
+                        <a href="/movies" class="viewall">{{ __('navigation.view_all') }} <i class="ion-ios-arrow-right"></i></a>
                     </div>
                     <div class="tabs">
                         <div class="tab-content">

@@ -8,4 +8,5 @@ return [
     'register'         => 'Iyandikishe',
     'follow_us'         => 'Dukurikirane kuri',
     'latest'         => 'Iziherutse',
+    'view_all'         => 'Reba zose',
 ];
