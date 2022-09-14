@@ -12,4 +12,8 @@ return [
     'trending'         => 'Trending',
     'community_member'         => 'Community member',
     'see_all_members'         => 'See all member',
+    'resources'         => 'Resources',
+    'legal'         => 'Legal',
+    'account'         => 'Account',
+    'newsletter'         => 'Newsletter',
 ];
