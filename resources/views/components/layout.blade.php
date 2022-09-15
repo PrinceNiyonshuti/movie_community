@@ -175,8 +175,8 @@
                         </form>
 
                         @else
-                        <li class="btn loginLink" style="margin-right: 10px;"><a href="#">Log In</a></li>
-                        <li class="btn signupLink"><a href="#">Register</a></li>
+                        <li class="btn loginLink" style="margin-right: 10px;"><a href="#">{{ __('navigation.login') }}</a></li>
+                        <li class="btn signupLink"><a href="#">{{ __('navigation.register') }}</a></li>
                         @endauth
                     </ul>
                 </div>
@@ -188,7 +188,7 @@
             <form action="/movies/search" method="post">
                 @csrf
                 <div class="top-search">
-                    <input type="text" name="movie_name" placeholder="Search for a movie, TV Show or celebrity that you are looking for">
+                    <input type="text" name="movie_name" placeholder='{{ __('navigation.search_home') }}'>
                 </div>
             </form>
 
@@ -205,14 +205,14 @@
                     <p>Call us: <a href="#">(+250) 788 888 888</a></p>
                 </div>
                 <div class="flex-child-ft item2">
-                    <h4>Resources</h4>
+                    <h4>{{ __('navigation.resources') }}</h4>
                     <ul>
                         <li><a href="{{route('contact')}}">Contact Us</a></li>
                         <li><a href="#">Blog</a></li>
                     </ul>
                 </div>
                 <div class="flex-child-ft item3">
-                    <h4>Legal</h4>
+                    <h4>{{ __('navigation.legal') }}</h4>
                     <ul>
                         <li><a href="{{route('terms')}}">Terms of Use</a></li>
                         <li><a href="{{route('privacy')}}">Privacy Policy</a></li>
@@ -220,7 +220,7 @@
                     </ul>
                 </div>
                 <div class="flex-child-ft item4">
-                    <h4>Account</h4>
+                    <h4>{{ __('navigation.account') }}</h4>
                     <ul>
                         <li><a href="/account">My Account</a></li>
                         <li><a href="#">Watch list</a></li>
@@ -228,7 +228,7 @@
                     </ul>
                 </div>
                 <div class="flex-child-ft item5">
-                    <h4>Newsletter</h4>
+                    <h4>{{ __('navigation.newsletter') }}</h4>
                     <p>Subscribe to our newsletter system now <br> to get latest news from us.</p>
                     <form method="POST" action="/subscribe">
                         @csrf

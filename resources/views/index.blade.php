@@ -4,7 +4,7 @@
         <div class="container">
             <div class="row">
                 <div class="social-link">
-                    <p>Follow us: </p>
+                    <p>{{ __('navigation.follow_us') }}: </p>
                     <a href="#"><i class="ion-social-facebook"></i></a>
                     <a href="#"><i class="ion-social-twitter"></i></a>
                     <a href="#"><i class="ion-social-googleplus"></i></a>
@@ -35,8 +35,8 @@
             <div class="row ipad-width">
                 <div class="col-md-8">
                     <div class="title-hd">
-                        <h2>Latest</h2>
-                        <a href="/movies" class="viewall">View all <i class="ion-ios-arrow-right"></i></a>
+                        <h2>{{ __('navigation.latest') }}</h2>
+                        <a href="/movies" class="viewall">{{ __('navigation.view_all') }} <i class="ion-ios-arrow-right"></i></a>
                     </div>
                     <div class="flex-wrap-movielist grid-fav">
                         @foreach ($movies as $movie)
@@ -53,8 +53,8 @@
                         @endforeach
                     </div>
                     <div class="title-hd">
-                        <h2>Trending</h2>
-                        <a href="/movies" class="viewall">View all <i class="ion-ios-arrow-right"></i></a>
+                        <h2>{{ __('navigation.trending') }}</h2>
+                        <a href="/movies" class="viewall">{{ __('navigation.view_all') }} <i class="ion-ios-arrow-right"></i></a>
                     </div>
                     <div class="tabs">
                         <div class="tab-content">
@@ -88,7 +88,7 @@
                             <img src="images/uploads/ads1.png" alt="" width="336" height="296">
                         </div>
                         <div class="celebrities">
-                            <h4 class="sb-title">Community Members</h4>
+                            <h4 class="sb-title">{{ __('navigation.community_member') }}</h4>
                             @foreach ($members as $member)
                             <div class="celeb-item">
                                 <a href="/member/{{ $member->username }}"><img src="{{ $member->avatar ? '/storage/$member->avatar' :asset('images/uploads/user-img.png') }}" alt="" width="70" height="70"></a>
@@ -99,7 +99,7 @@
                                 </div>
                             </div>
                             @endforeach
-                            <a href="/members" class="btn">See all members<i class="ion-ios-arrow-right"></i></a>
+                            <a href="/members" class="btn">{{ __('navigation.see_all_members') }}<i class="ion-ios-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
