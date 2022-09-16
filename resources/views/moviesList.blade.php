@@ -6,8 +6,8 @@
                     <div class="hero-ct">
                         <h1> {{ __('movie.movie_list') }} - {{ __('movie.list') }}</h1>
                         <ul class="breadcumb">
-                            <li class="active"><a href="/">Home</a></li>
-                            <li> <span class="ion-ios-arrow-right"></span> movie listing</li>
+                            <li class="active"><a href="/">{{ __('navigation.home') }}</a></li>
+                            <li> <span class="ion-ios-arrow-right"></span>{{ __('movie.list') }}</li>
                         </ul>
                     </div>
                 </div>
