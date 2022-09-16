@@ -6,4 +6,6 @@ return [
     'found' => 'Found',
     'in_total' => 'in total',
     'search_for_movie' => 'Search for movie',
+    'movie_name' => 'Movie name',
+    'search' => 'search',
 ];
