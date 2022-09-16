@@ -19,7 +19,7 @@
             <div class="row ipad-width2">
                 <div class="col-md-8 col-sm-12 col-xs-12">
                     <div class="topbar-filter">
-                        <p>Found <span>{{ $movies->count() }} movies</span> in total</p>
+                        <p>{{ __('movie.found') }} <span>{{ $movies->count() }} movies</span> {{ __('movie.in_total') }}</p>
                     </div>
                     @foreach ($movies as $movie)
                     <div class="movie-item-style-2">
