@@ -15,4 +15,5 @@ return [
     'director' => 'Director',
     'writer' => 'Writer',
     'genres' => 'Genres',
+    'release_date' => 'Release Date',
 ];
