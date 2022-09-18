@@ -8,4 +8,5 @@ return [
     'search_for_movie' => 'Search for movie',
     'movie_name' => 'Movie name',
     'search' => 'search',
+    'add_to_favorite'=> 'Add to Favorite',
 ];
