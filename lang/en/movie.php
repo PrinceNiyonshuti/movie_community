@@ -13,4 +13,5 @@ return [
     'overview' => 'Overview',
     'related_movies' => 'Related Movies',
     'director' => 'Director',
+    'writer' => 'Writer',
 ];
