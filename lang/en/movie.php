@@ -16,4 +16,5 @@ return [
     'writer' => 'Writer',
     'genres' => 'Genres',
     'release_date' => 'Release Date',
+    'uploaded_by' => 'Uploaded By',
 ];
