@@ -11,4 +11,5 @@ return [
     'add_to_favorite'=> 'Add to Favorite',
     'login_to_save_favorites'=> ' Login to Save Your Favorite',
     'overview' => 'Overview',
+    'related_movies' => 'Related Movies',
 ];
