@@ -15,4 +15,5 @@ return [
     'director' => 'Uwayoboye Filmi',
     'writer' => 'Uwanditse Filmi',
     'genres' => 'Kategori',
+    'release_date' => 'Itariki yasohokeyeho',
 ];
