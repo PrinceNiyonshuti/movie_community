@@ -16,4 +16,5 @@ return [
     'writer' => 'Uwanditse Filmi',
     'genres' => 'Kategori',
     'release_date' => 'Itariki yasohokeyeho',
+    'uploaded_by' => 'Yashizweho na',
 ];
