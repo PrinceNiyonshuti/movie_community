@@ -14,4 +14,5 @@ return [
     'related_movies' => 'Filimi ziri muri kategori imwe',
     'director' => 'Uwayoboye Filmi',
     'writer' => 'Uwanditse Filmi',
+    'genres' => 'Kategori',
 ];
