@@ -9,4 +9,5 @@ return [
     'movie_name' => 'Izina ry filmi',
     'search' => 'Shakisha',
     'add_to_favorite' => 'Ndayikunze',
+    'login_to_save_favorites' => 'Injira kugira ubike urutonde rwawe',
 ];
