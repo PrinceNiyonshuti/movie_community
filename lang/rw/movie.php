@@ -8,4 +8,5 @@ return [
     'search_for_movie' => 'Shakisha filmi',
     'movie_name' => 'Izina ry filmi',
     'search' => 'Shakisha',
+    'add_to_favorite' => 'Ndayikunze',
 ];
