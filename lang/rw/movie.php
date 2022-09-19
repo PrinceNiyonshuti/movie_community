@@ -17,4 +17,5 @@ return [
     'genres' => 'Kategori',
     'release_date' => 'Itariki yasohokeyeho',
     'uploaded_by' => 'Yashizweho na',
+    'watch_movie' => 'Reba Filmi',
 ];
