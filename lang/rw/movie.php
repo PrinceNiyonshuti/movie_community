@@ -10,4 +10,5 @@ return [
     'search' => 'Shakisha',
     'add_to_favorite' => 'Ndayikunze',
     'login_to_save_favorites' => 'Injira kugira ubike urutonde rwawe',
+    'overview' => 'Ibiyigize',
 ];
