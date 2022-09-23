@@ -55,7 +55,7 @@
                                                     <p><a href="/category/{{ $movie->genre->name }}">{{ $movie->genre->name }}</p>
                                                 </div>
                                                 <div class="sb-it">
-                                                    <h6>Release Date:</h6>
+                                                    <h6>{{ __('movie.related_movies') }}:</h6>
                                                     <p>{{ date('F d ,Y', strtotime($movie->released_date))}}</p>
                                                 </div>
                                                 <div class="sb-it">
