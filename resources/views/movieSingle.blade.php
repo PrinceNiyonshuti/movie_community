@@ -32,7 +32,7 @@
                         <div class="movie-tabs">
                             <div class="tabs">
                                 <ul class="tab-links tabs-mv">
-                                    <li class="active"><a href="#overview">Overview</a></li>
+                                    <li class="active"><a href="#overview">{{ __('movie.overview') }}</a></li>
                                     <li><a href="#moviesrelated"> Related Movies</a></li>
                                 </ul>
                                 <div class="tab-content">
