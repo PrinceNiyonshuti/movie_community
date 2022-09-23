@@ -22,10 +22,10 @@
                             @auth
                             <form id="btn btn-default" method="POST" action="/favorite/{{ $movie->name }}">
                                 @csrf
-                                <button type="submit" class="log-out"><i class="ion-heart"></i> Add to Favorite</button>
+                                <button type="submit" class="log-out"><i class="ion-heart"></i> {{ __('movie.add_to_favorite') }}</button>
                             </form>
                             @else
-                            <a href="#" class="parent-btn btn loginLink"><i class="ion-heart"></i> Login to Save Your Favorite</a>
+                            <a href="#" class="parent-btn btn loginLink"><i class="ion-heart"></i> {{ __('movie.login_to_save_favorites') }}</a>
                             @endauth
 
                         </div>
