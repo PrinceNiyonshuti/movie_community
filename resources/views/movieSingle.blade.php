@@ -51,7 +51,7 @@
                                                     <p><a href="#">{{ $movie->writer }}</a></p>
                                                 </div>
                                                 <div class="sb-it">
-                                                    <h6>Genres:</h6>
+                                                    <h6>{{ __('movie.genres') }}:</h6>
                                                     <p><a href="/category/{{ $movie->genre->name }}">{{ $movie->genre->name }}</p>
                                                 </div>
                                                 <div class="sb-it">
