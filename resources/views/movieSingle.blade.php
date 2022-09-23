@@ -55,11 +55,11 @@
                                                     <p><a href="/category/{{ $movie->genre->name }}">{{ $movie->genre->name }}</p>
                                                 </div>
                                                 <div class="sb-it">
-                                                    <h6>{{ __('movie.related_movies') }}:</h6>
+                                                    <h6>{{ __('movie.release_date') }}:</h6>
                                                     <p>{{ date('F d ,Y', strtotime($movie->released_date))}}</p>
                                                 </div>
                                                 <div class="sb-it">
-                                                    <h6>Uploaded by:</h6>
+                                                    <h6>{{ __('movie.uploaded_by') }}:</h6>
                                                     <p><a href="/member/{{ $movie->user->username }}">{{ $movie->user->username }}</a></p>
                                                 </div>
                                             </div>
