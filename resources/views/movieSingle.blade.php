@@ -47,7 +47,7 @@
                                                     <p><a href="#">{{ $movie->director }}</a></p>
                                                 </div>
                                                 <div class="sb-it">
-                                                    <h6>Writer: </h6>
+                                                    <h6>{{ __('movie.writer') }}: </h6>
                                                     <p><a href="#">{{ $movie->writer }}</a></p>
                                                 </div>
                                                 <div class="sb-it">
