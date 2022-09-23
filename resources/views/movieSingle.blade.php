@@ -64,7 +64,7 @@
                                                 </div>
                                             </div>
                                             <div class="col-lg-12" style="margin-top:15px">
-                                                <h2 class="mt-5">Watch Movie</h2>
+                                                <h2 class="mt-5">{{ __('movie.watch_movie') }}</h2>
                                                 @if ($movie->video)
                                                 <video width="100%" height="400" controls>
                                                     <source src="/storage/{{ $movie->video }}" type="video/mp4">
