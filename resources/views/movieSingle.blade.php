@@ -22,18 +22,18 @@
                             @auth
                             <form id="btn btn-default" method="POST" action="/favorite/{{ $movie->name }}">
                                 @csrf
-                                <button type="submit" class="log-out"><i class="ion-heart"></i> Add to Favorite</button>
+                                <button type="submit" class="log-out"><i class="ion-heart"></i> {{ __('movie.add_to_favorite') }}</button>
                             </form>
                             @else
-                            <a href="#" class="parent-btn btn loginLink"><i class="ion-heart"></i> Login to Save Your Favorite</a>
+                            <a href="#" class="parent-btn btn loginLink"><i class="ion-heart"></i> {{ __('movie.login_to_save_favorites') }}</a>
                             @endauth
 
                         </div>
                         <div class="movie-tabs">
                             <div class="tabs">
                                 <ul class="tab-links tabs-mv">
-                                    <li class="active"><a href="#overview">Overview</a></li>
-                                    <li><a href="#moviesrelated"> Related Movies</a></li>
+                                    <li class="active"><a href="#overview">{{ __('movie.overview') }}</a></li>
+                                    <li><a href="#moviesrelated">{{ __('movie.related_movies') }}</a></li>
                                 </ul>
                                 <div class="tab-content">
                                     <div id="overview" class="tab active">
@@ -43,28 +43,28 @@
                                             </div>
                                             <div class="col-md-4 col-xs-12 col-sm-12">
                                                 <div class="sb-it">
-                                                    <h6>Director: </h6>
+                                                    <h6>{{ __('movie.director') }}: </h6>
                                                     <p><a href="#">{{ $movie->director }}</a></p>
                                                 </div>
                                                 <div class="sb-it">
-                                                    <h6>Writer: </h6>
+                                                    <h6>{{ __('movie.writer') }}: </h6>
                                                     <p><a href="#">{{ $movie->writer }}</a></p>
                                                 </div>
                                                 <div class="sb-it">
-                                                    <h6>Genres:</h6>
+                                                    <h6>{{ __('movie.genres') }}:</h6>
                                                     <p><a href="/category/{{ $movie->genre->name }}">{{ $movie->genre->name }}</p>
                                                 </div>
                                                 <div class="sb-it">
-                                                    <h6>Release Date:</h6>
+                                                    <h6>{{ __('movie.release_date') }}:</h6>
                                                     <p>{{ date('F d ,Y', strtotime($movie->released_date))}}</p>
                                                 </div>
                                                 <div class="sb-it">
-                                                    <h6>Uploaded by:</h6>
+                                                    <h6>{{ __('movie.uploaded_by') }}:</h6>
                                                     <p><a href="/member/{{ $movie->user->username }}">{{ $movie->user->username }}</a></p>
                                                 </div>
                                             </div>
                                             <div class="col-lg-12" style="margin-top:15px">
-                                                <h2 class="mt-5">Watch Movie</h2>
+                                                <h2 class="mt-5">{{ __('movie.watch_movie') }}</h2>
                                                 @if ($movie->video)
                                                 <video width="100%" height="400" controls>
                                                     <source src="/storage/{{ $movie->video }}" type="video/mp4">
