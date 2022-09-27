@@ -19,7 +19,7 @@
             <div class="row ipad-width2">
                 <div class="col-md-8 col-sm-12 col-xs-12">
                     <div class="topbar-filter">
-                        <p>Found <span>{{ $movies->count() }} movies</span> in total</p>
+                        <p>{{ __('movie.found') }} <span>{{ $movies->count() }} movies</span> {{ __('movie.in_total') }}</p>
                     </div>
                     @foreach ($movies as $movie)
                     <div class="movie-item-style-2">
@@ -28,9 +28,9 @@
                             <h6><a href="/movies/{{ $movie->name}}">{{ $movie->name }} <span>( {{ date('Y', strtotime($movie->released_date))}} )</span></a></h6>
                             <p class="blue">{{ $movie->genre->name }}</p>
                             <p class="describe">{{Str::limit($movie->description, 150)}}</p>
-                            <p class="run-time"> Release : {{ date('d F , Y', strtotime($movie->released_date))}}</p>
-                            <p>Director: <a href="#">{{ $movie->director }}</a></p>
-                            <p>writer: <a href="#">{{ $movie->writer }}</a> </p>
+                            <p class="run-time"> {{ __('movie.release_date') }} : {{ date('d F , Y', strtotime($movie->released_date))}}</p>
+                            <p>{{ __('movie.director') }}: <a href="#">{{ $movie->director }}</a></p>
+                            <p>{{ __('movie.writer') }}: <a href="#">{{ $movie->writer }}</a> </p>
                         </div>
                     </div>
                     @endforeach
@@ -38,16 +38,16 @@
                 <div class="col-md-4 col-sm-12 col-xs-12">
                     <div class="sidebar">
                         <div class="searh-form">
-                            <h4 class="sb-title">Search for movie</h4>
+                            <h4 class="sb-title">{{ __('movie.search_for_movie') }}</h4>
                             <form class="form-style-1" action="/movies/search" method="post">
                                 @csrf
                                 <div class="row">
                                     <div class="col-md-12 form-it">
-                                        <label>Movie name</label>
-                                        <input type="text" name="movie_name" placeholder="Enter keywords">
+                                        <label>{{ __('movie.movie_name') }}</label>
+                                        <input type="text" name="movie_name" placeholder="{{ __('movie.movie_name') }}">
                                     </div>
                                     <div class="col-md-12 ">
-                                        <input class="submit" type="submit" value="submit">
+                                        <input class="submit" type="submit" value="{{ __('movie.search') }}">
                                     </div>
                                 </div>
                             </form>

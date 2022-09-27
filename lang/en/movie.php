@@ -18,5 +18,6 @@ return [
     'release_date' => 'Release Date',
     'uploaded_by' => 'Uploaded By',
     'watch_movie' => 'Watch Movie',
-    
+    'watch_movie' => 'Watch Movie',
+
 ];
