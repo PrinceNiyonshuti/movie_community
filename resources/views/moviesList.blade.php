@@ -23,8 +23,8 @@
                     </div>
                     @foreach ($movies as $movie)
                     <div class="movie-item-style-2">
-                        <img src="{{ $movie->thumbnail? '/storage/$movie->thumbnail': asset('images/uploads/poster1.jpg') }}" alt="{{ $movie->name }}">
-                        <div class="mv-item-infor">
+                        <img src="{{ $movie->thumbnail? '/storage/$movie->thumbnail': asset('images/uploads/poster1.jpg') }}"  alt="{{ $movie->name }}" style="height: 195px;width:128px;">
+                        <div class="mv-item-info">
                             <h6><a href="/movies/{{ $movie->name}}">{{ $movie->name }} <span>( {{ date('Y', strtotime($movie->released_date))}} )</span></a></h6>
                             <p class="blue"><a href="/category/{{ $movie->genre->name }}">{{ $movie->genre->name }}</a></p>
                             <p class="describe">{{Str::limit($movie->description, 150)}}</p>
