@@ -80,7 +80,7 @@
                                         <div class="row">
                                             <div class="rv-hd">
                                                 <div class="div">
-                                                    <h3>Related Movies To</h3>
+                                                    <h3>{{ __('movie.related_movies') }}</h3>
                                                     <h2>{{ $movie->name }}</h2>
                                                 </div>
                                                 <a href="#" class="redbtn">Write Review</a>
@@ -89,7 +89,7 @@
                                     </div>
                                     <div id="moviesrelated" class="tab">
                                         <div class="row">
-                                            <h3>Related Movies To</h3>
+                                            <h3>{{ __('movie.related_movies') }}</h3>
                                             <h2>{{ $movie->name }}</h2>
                                             <div class="topbar-filter">
                                                 <p>Found <span>{{ $related_movies->count() }} movies</span> in total</p>
