@@ -8,5 +8,4 @@ return [
     'search_for_member' => 'Search for member',
     'member_name' => 'Member name',
     'search' => 'search',
-
 ];
