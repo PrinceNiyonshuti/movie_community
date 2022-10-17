@@ -19,18 +19,7 @@
             <div class="row ipad-width2">
                 <div class="col-md-9 col-sm-12 col-xs-12">
                     <div class="topbar-filter">
-                        <p class="pad-change">Found <span>{{ $members->count()  }} members</span></p>
-                        <label>Sort by:</label>
-                        <select>
-                            <option value="popularity">Popularity Descending</option>
-                            <option value="popularity">Popularity Ascending</option>
-                            <option value="rating">Rating Descending</option>
-                            <option value="rating">Rating Ascending</option>
-                            <option value="date">Release date Descending</option>
-                            <option value="date">Release date Ascending</option>
-                        </select>
-                        <a href="celebritylist.html" class="list"><i class="ion-ios-list-outline "></i></a>
-                        <a href="celebritygrid02.html" class="grid"><i class="ion-grid active"></i></a>
+                        <p>{{ __('member.found') }} <span>{{ $members->count() }} members</span> {{ __('member.in_total') }}</p>
                     </div>
                     <div class="row">
                         @foreach ($members as $member)
