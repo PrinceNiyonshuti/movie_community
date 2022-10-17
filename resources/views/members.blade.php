@@ -4,10 +4,10 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="hero-ct">
-                        <h1> members listing - list</h1>
+                        <h1> {{ __('member.member_list') }} - {{ __('member.list') }}</h1>
                         <ul class="breadcumb">
-                            <li class="active"><a href="/">Home</a></li>
-                            <li> <span class="ion-ios-arrow-right"></span> members listing</li>
+                            <li class="active"><a href="/">{{ __('navigation.home') }}</a></li>
+                            <li> <span class="ion-ios-arrow-right"></span>{{ __('member.list') }}</li>
                         </ul>
                     </div>
                 </div>
