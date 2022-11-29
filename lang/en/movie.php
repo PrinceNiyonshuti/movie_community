@@ -1,6 +1,7 @@
 <?php
 
 return [
+    'movie' => 'Movie',
     'movie_list' => 'Movie List',
     'list' => 'List',
     'found' => 'Found',

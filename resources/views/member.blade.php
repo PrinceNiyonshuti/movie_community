@@ -33,7 +33,7 @@
 
                 <div class="col-md-9 col-sm-12 col-xs-12">
                     <div class="topbar-filter user">
-                        <p>Found <span>{{ $movies->count() }} movies</span> in total</p>
+                        <p>{{ __('movie.found') }} <span>{{ $movies->count() }} {{ __('movie.movie') }}</span> {{ __('movie.in_total') }}</p>
                     </div>
                     <div class="flex-wrap-movielist grid-fav">
                         @foreach ($movies as $movie)
