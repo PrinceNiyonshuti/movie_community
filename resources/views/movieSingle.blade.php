@@ -92,7 +92,7 @@
                                             <h3>{{ __('movie.related_movies') }}</h3>
                                             <h2>{{ $movie->name }}</h2>
                                             <div class="topbar-filter">
-                                                <p>{{ __('movie.found') }} <span>{{ $related_movies->count() }} movies</span> {{ __('movie.in_total') }}</p>
+                                                <p>{{ __('movie.found') }} <span>{{ $related_movies->count() }} {{ __('movie.movie') }}</span> {{ __('movie.in_total') }}</p>
 
                                             </div>
                                             @foreach ($related_movies as $related )

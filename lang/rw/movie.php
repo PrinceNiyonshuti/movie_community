@@ -1,6 +1,7 @@
 <?php
 
 return [
+    'movie' => 'Filmi',
     'movie_list' => 'Urutonde rwa filmi',
     'list' => 'Urutonde',
     'found' => 'Habonetse',
