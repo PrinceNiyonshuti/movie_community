@@ -8,4 +8,6 @@ return [
     'search_for_member' => 'Shakisha abanyamuryango',
     'member_name' => 'Izina ry abanyamuryango',
     'search' => 'Shakisha',
+    'profile' => 'Profile',
+    'member_activity' => 'Ibikorwa byumunyamuryango',
 ];

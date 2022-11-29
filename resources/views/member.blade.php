@@ -4,10 +4,10 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="hero-ct">
-                        <h1>{{ $member['firstName'] }} {{ $member['lastName'] }} Profile</h1>
+                        <h1>{{ $member['firstName'] }} {{ $member['lastName'] }} {{ __('member.profile') }}</h1>
                         <ul class="breadcumb">
-                            <li class="active"><a href="/">Home</a></li>
-                            <li> <span class="ion-ios-arrow-right"></span>Member Activity</li>
+                            <li class="active"><a href="/">{{ __('navigation.home') }}</a></li>
+                            <li> <span class="ion-ios-arrow-right"></span>{{ __('member.member_activity') }}</li>
                         </ul>
                     </div>
                 </div>
