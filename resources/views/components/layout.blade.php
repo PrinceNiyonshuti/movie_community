@@ -216,7 +216,7 @@
                     <ul>
                         <li><a href="{{route('terms')}}">Terms of Use</a></li>
                         <li><a href="{{route('privacy')}}">Privacy Policy</a></li>
-                        <li><a href="#">Security</a></li>
+                        <li><a href="{{route('security')}}">Security</a></li>
                     </ul>
                 </div>
                 <div class="flex-child-ft item4">
