@@ -208,7 +208,7 @@
                     <h4>{{ __('navigation.resources') }}</h4>
                     <ul>
                         <li><a href="{{route('contact')}}">{{ __('common.contact_us') }}</a></li>
-                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">{{ __('common.blog') }}</a></li>
                     </ul>
                 </div>
                 <div class="flex-child-ft item3">
