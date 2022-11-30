@@ -4,10 +4,10 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="hero-ct">
-                        <h1> Contact</h1>
+                        <h1>{{ __('common.contact_us') }}</h1>
                         <ul class="breadcumb">
-                            <li class="active"><a href="/">Home</a></li>
-                            <li> <span class="ion-ios-arrow-right"></span> reach to us</li>
+                            <li class="active"><a href="/">{{ __('navigation.home') }}</a></li>
+                            <li> <span class="ion-ios-arrow-right"></span>{{ __('common.security') }}</li>
                         </ul>
                     </div>
                 </div>
