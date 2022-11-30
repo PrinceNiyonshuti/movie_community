@@ -1,11 +1,11 @@
 <?php
 
 return [
-    'contact_us' => 'Contact Us',
-    'blog' => 'Blog',
-    'term_of_us' => 'Terms of Use',
-    'privacy_policy' => 'Privacy Policy',
-    'security' => 'Security',
-    'my_account' => 'My Account',
-    'watch_list' => 'Watch list',
+    'contact_us' => 'Tuvugishe',
+    'blog' => 'Ikunyamakuru',
+    'term_of_us' => 'Uko urubuga rukoreshwa',
+    'privacy_policy' => 'Umutekano w\'umuryango',
+    'security' => 'Sekirite',
+    'my_account' => 'Konti y\'anjye',
+    'watch_list' => 'Urutonde rw\'a filimi',
 ];
