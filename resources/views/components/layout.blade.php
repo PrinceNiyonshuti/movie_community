@@ -207,23 +207,23 @@
                 <div class="flex-child-ft item2">
                     <h4>{{ __('navigation.resources') }}</h4>
                     <ul>
-                        <li><a href="{{route('contact')}}">Contact Us</a></li>
+                        <li><a href="{{route('contact')}}">{{ __('common.contact_us') }}</a></li>
                         <li><a href="#">Blog</a></li>
                     </ul>
                 </div>
                 <div class="flex-child-ft item3">
                     <h4>{{ __('navigation.legal') }}</h4>
                     <ul>
-                        <li><a href="{{route('terms')}}">Terms of Use</a></li>
-                        <li><a href="{{route('privacy')}}">Privacy Policy</a></li>
-                        <li><a href="{{route('security')}}">Security</a></li>
+                        <li><a href="{{route('terms')}}">{{ __('common.term_of_us') }}</a></li>
+                        <li><a href="{{route('privacy')}}">{{ __('common.privacy_policy') }}</a></li>
+                        <li><a href="{{route('security')}}">{{ __('common.security') }}</a></li>
                     </ul>
                 </div>
                 <div class="flex-child-ft item4">
                     <h4>{{ __('navigation.account') }}</h4>
                     <ul>
-                        <li><a href="/account">My Account</a></li>
-                        <li><a href="#">Watch list</a></li>
+                        <li><a href="/account">{{ __('common.my_account') }}</a></li>
+                        <li><a href="#">{{ __('common.watch_list') }}</a></li>
                         <li><a href="#">User Guide</a></li>
                     </ul>
                 </div>
