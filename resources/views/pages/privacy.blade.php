@@ -4,10 +4,10 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="hero-ct">
-                        <h1>Privacy Policy</h1>
+                        <h1>{{ __('common.privacy_policy') }}</h1>
                         <ul class="breadcumb">
-                            <li class="active"><a href="/">Home</a></li>
-                            <li> <span class="ion-ios-arrow-right"></span>Privacy Policy</li>
+                            <li class="active"><a href="/">{{ __('navigation.home') }}</a></li>
+                            <li> <span class="ion-ios-arrow-right"></span>{{ __('common.privacy_policy') }}</li>
                         </ul>
                     </div>
                 </div>

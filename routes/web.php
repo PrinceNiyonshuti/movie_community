@@ -87,3 +87,7 @@ Route::get('terms', function () {
 Route::get('privacy', function () {
     return view('pages.privacy');
 })->name('privacy');
+
+Route::get('security', function () {
+    return view('pages.security');
+})->name('security');
