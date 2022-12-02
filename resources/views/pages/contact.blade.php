@@ -7,7 +7,7 @@
                         <h1>{{ __('common.contact_us') }}</h1>
                         <ul class="breadcumb">
                             <li class="active"><a href="/">{{ __('navigation.home') }}</a></li>
-                            <li> <span class="ion-ios-arrow-right"></span>{{ __('common.security') }}</li>
+                            <li> <span class="ion-ios-arrow-right"></span>{{ __('common.contact_us') }}</li>
                         </ul>
                     </div>
                 </div>

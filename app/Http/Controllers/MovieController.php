@@ -32,9 +32,6 @@ class MovieController extends Controller
             'thumbnail' => 'required|image',
             'alternative_video' => 'required'
         ]);
-
-        // dd($attributes);
-        // get user id
         $attributes['user_id'] = auth()->id();
         $attributes['thumbnail'] = request()->file('thumbnail')->store('thumbnails');
         if (isset($request['video'])) {
