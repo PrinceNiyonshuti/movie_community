@@ -40,6 +40,7 @@ Route::middleware('auth')->prefix('/account')->group(function () {
     Route::get('', [DashboardController::class, 'index']);
     Route::get('/profile', [DashboardController::class, 'create']);
     Route::post('/update', [DashboardController::class, 'update']);
+    Route::get('/watchlist',[DashboardController::class, 'watchlist']);
 });
 
 // Movie actions
