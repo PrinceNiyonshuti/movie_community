@@ -14,4 +14,12 @@
             </div>
         </div>
     </div>
+    <div class="page-single">
+        <div class="container">
+            <div class="row ipad-width2">
+                <div class="row">
+                </div>
+            </div>
+        </div>
+    </div>
 </x-layout>
