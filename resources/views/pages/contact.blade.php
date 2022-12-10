@@ -38,7 +38,10 @@
                                 </div>
                                 <div class="col-md-12 form-it">
                                     <label>Message</label>
-                                    <textarea placeholder="Write something here" rows="40" cols="50" name="description" required></textarea>
+                                    <textarea placeholder="Write something here" rows="40" cols="50" name="detail" value="{{ old('detail') }}" required></textarea>
+                                    @error('detail')
+                                    <p class="text-danger">{{ $description }}</p>
+                                    @enderror
                                 </div>
                             </div>
                             <div class="row">
