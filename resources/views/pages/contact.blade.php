@@ -24,15 +24,17 @@
                             <div class="row">
                                 <div class="col-md-6 form-it">
                                     <label>Names</label>
-                                    <input type="text" name="names" value="{{ old('names') }}" placeholder="edwardkennedy">
+                                    <input type="text" name="names" value="{{ old('names') }}" placeholder="edwardkennedy" required>
                                     @error('names')
                                     <p class="text-danger">{{ $description }}</p>
                                     @enderror
                                 </div>
                                 <div class="col-md-6 form-it">
                                     <label>Email Address</label>
-                                    <input type="text" placeholder="edward@kennedy.com">
-
+                                    <input type="text" name="email" value="{{ old('email') }}" placeholder="edward@kennedy.com" required>
+                                    @error('email')
+                                    <p class="text-danger">{{ $description }}</p>
+                                    @enderror
                                 </div>
                                 <div class="col-md-12 form-it">
                                     <label>Message</label>
