@@ -46,27 +46,21 @@
                             <h4>Leave Us A Message</h4>
                             <div class="row">
                                 <div class="col-md-6 form-it">
-                                    <label>Username</label>
+                                    <label>Names</label>
                                     <input type="text" placeholder="edwardkennedy">
                                 </div>
                                 <div class="col-md-6 form-it">
                                     <label>Email Address</label>
                                     <input type="text" placeholder="edward@kennedy.com">
                                 </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-6 form-it">
-                                    <label>First Name</label>
-                                    <input type="text" placeholder="Edward ">
-                                </div>
-                                <div class="col-md-6 form-it">
-                                    <label>Last Name</label>
-                                    <input type="text" placeholder="Kennedy">
+                                <div class="col-md-12 form-it">
+                                    <label>Message</label>
+                                    <textarea placeholder="Write something here" rows="40" cols="50" name="description" required></textarea>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-md-2">
-                                    <input class="submit" type="submit" value="save">
+                                    <input class="submit" type="submit" value="Send">
                                 </div>
                             </div>
                         </form>
