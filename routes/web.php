@@ -92,3 +92,5 @@ Route::get('privacy', function () {
 Route::get('security', function () {
     return view('pages.security');
 })->name('security');
+
+Route::post('/contact', [GuestController::class, 'contact']);
