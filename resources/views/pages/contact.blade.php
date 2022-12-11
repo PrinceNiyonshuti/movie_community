@@ -19,6 +19,11 @@
             <div class="row ipad-width">
                 <div class="col-md-12 col-sm-12 col-xs-12">
                     <div class="form-style-1 user-pro" action="#">
+                        @if (session()->has('success'))
+                        <div class="alert alert-success" role="alert">
+                            <p>{{ session('success') }}</p>
+                        </div>
+                        @endif
                         <form action="#" class="user">
                             @csrf
                             <h4>Leave Us A Message</h4>

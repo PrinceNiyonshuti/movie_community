@@ -71,5 +71,7 @@ class GuestController extends Controller
             $message->to('test@gmai.com');
             $message->subject($data['message']);
         });
+
+        return redirect()->back()->with('success', 'Your message has been sent!');
     }
 }
