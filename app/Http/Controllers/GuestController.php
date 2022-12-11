@@ -52,4 +52,8 @@ class GuestController extends Controller
         $all_members = User::latest()->get();
         return view('members', ['members' => $all_members]);
     }
+
+    public function contact(Request $request){
+
+    }
 }
