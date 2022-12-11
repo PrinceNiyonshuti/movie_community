@@ -54,6 +54,22 @@ class GuestController extends Controller
     }
 
     public function contact(Request $request){
+        $request->validate([
+            'name' => 'required',
+            'email' => 'required|email',
+            'message' => 'required'
+        ]);
 
+        $data = array(
+            'name' => $request->name,
+            'email' => $request->email,
+            'message' => $request->message
+        );
+
+        Mail::send('emails.contact', $data, function($message) use ($data){
+            $message->from($data['email']);
+            $message->to('test@gmai.com');
+            $message->subject($data['message']);
+        });
     }
 }
