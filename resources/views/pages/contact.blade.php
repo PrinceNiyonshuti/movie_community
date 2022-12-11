@@ -20,6 +20,7 @@
                 <div class="col-md-12 col-sm-12 col-xs-12">
                     <div class="form-style-1 user-pro" action="#">
                         <form action="#" class="user">
+                            @csrf
                             <h4>Leave Us A Message</h4>
                             <div class="row">
                                 <div class="col-md-6 form-it">
