@@ -49,6 +49,8 @@
                     <p>We take no responsibility whatsoever for the content of any sites which may be linked to this site.</p>
                     <h2>Proper Law </h2>
                     <p>The law applicable in all matters in relation to this site is the law of England and Wales, whose courts will have the sole jurisdiction to hear and settle any dispute.</p>
+                    <h2>Claims of Infringement</h2>
+                    <p>If you believe that any content appearing on this site infringes your intellectual property rights, please forward get in touch in writing through our <a href="http://www.intofilm.org/contact-us">contact us form</a> or by post to: Into Film, 31 Islington Green, London, N1 8DU.</p>
                 </div>
             </div>
         </div>
