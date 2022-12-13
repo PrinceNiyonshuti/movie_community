@@ -17,7 +17,12 @@
     <div class="page-single">
         <div class="container">
             <div class="row ipad-width">
-                
+                <div class="block block-text">
+                    <h1 style="color:white; margin-bottom:5px;">Acceptance of Terms</h1>
+                    <p>By using this site you will be deemed to have irrevocably agreed to these terms.</p>
+                    <p>You will also be subject to any further terms and conditions, which may be presented as you navigate this site. These too will be binding on you. By using this site, you also accept the binding nature of any variations which we may issue whether you are specifically advised of these or not. You can obtain the latest set of terms by <a href="https://manager.intofilm.org/contact">contacting us</a>.</p>
+                    <p>It is a condition of your use of this site that you provide such details as we request, and that these are accurate in all respects. We reserve the right to disallow your use of this site if the particulars provided are materially inaccurate, whether this is your fault or not.</p>
+                </div>
             </div>
         </div>
     </div>
