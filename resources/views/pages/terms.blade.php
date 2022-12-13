@@ -27,6 +27,11 @@
                     <h2 style="color:white; margin-bottom:5px;">Limitation of Liability</h2>
                     <p>We are not liable at all for any loss or damage which you might incur through your use of this site in any way at all. This includes, but is not limited to, any damage to person or property which might arise. If, under the relevant law, we are so liable, then our liability cannot exceed the amount of any expense incurred by you in using this site.</p>
                 </div>
+                <div class="block block-text">
+                    <h2>Submission of Material</h2>
+                    <p>You are welcome to submit any material for our consideration. We should warn you, however, that we do not undertake to keep such material confidential, and we have the absolute right to make use of it in any way we choose without incurring any liability to you, whether in respect of payment or otherwise.</p>
+                    <p>If we do actively seek a submission, you must ensure that your submissions comply with all relevant laws and you are advised to seek legal advice in advance. If our use of your submission results in any liability to us, you agree to make good all losses we incur of whatever nature.</p>
+                </div>
             </div>
         </div>
     </div>
