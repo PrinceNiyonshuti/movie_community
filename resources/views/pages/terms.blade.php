@@ -45,6 +45,8 @@
                 <div class="block block-text">
                     <h2>System Abuse</h2>
                     <p>In its widest sense, you agree that you will in no way abuse the online system, whether by way of spamming or in any other way. You may not reproduce, sell, resell or otherwise exploit any resource, or access to any resource, contained on this site. You may not share or disclose account log-in credentials. You are also prohibited from, again in its widest sense, undertaking any action which compromises the security of this or any other site, or that of any other user.</p>
+                    <h2>Third-Party Sites</h2>
+                    <p>We take no responsibility whatsoever for the content of any sites which may be linked to this site.</p>
                     </div>
             </div>
         </div>
