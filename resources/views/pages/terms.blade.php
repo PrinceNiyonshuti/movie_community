@@ -42,6 +42,10 @@
                     <p><strong>(c) Fair dealing for the purpose of criticism or review (Section 30)</strong></p>
                     <p>The use of the content must be no more than required by the specific purpose for which it is being used. A sufficient acknowledgement is required, as with the previous exception.<br><br>Please note that it is your sole responsibility to determine whether your proposed use of any Resource falls within one of the above or any other copyright exception. The notes set out above on the terms of the exceptions are not legal advice and are provided for your guidance only.<br><br>Use of the Resources for any other purpose must be specifically approved in writing by Into Film.</p>
                 </div>
+                <div class="block block-text">
+                    <h2>System Abuse</h2>
+                    <p>In its widest sense, you agree that you will in no way abuse the online system, whether by way of spamming or in any other way. You may not reproduce, sell, resell or otherwise exploit any resource, or access to any resource, contained on this site. You may not share or disclose account log-in credentials. You are also prohibited from, again in its widest sense, undertaking any action which compromises the security of this or any other site, or that of any other user.</p>
+                    </div>
             </div>
         </div>
     </div>
