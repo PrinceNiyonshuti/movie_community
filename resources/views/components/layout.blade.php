@@ -30,6 +30,10 @@
             background: none;
             margin-top: 2px;
         }
+        .terms-header{
+            color :white;
+            margin-bottom: 6px;
+        }
     </style>
 </head>
 
