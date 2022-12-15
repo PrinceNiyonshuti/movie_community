@@ -52,4 +52,26 @@ class GuestController extends Controller
         $all_members = User::latest()->get();
         return view('members', ['members' => $all_members]);
     }
+
+    public function contact(Request $request){
+        $request->validate([
+            'name' => 'required',
+            'email' => 'required|email',
+            'message' => 'required'
+        ]);
+
+        $data = array(
+            'name' => $request->name,
+            'email' => $request->email,
+            'message' => $request->message
+        );
+
+        Mail::send('emails.contact', $data, function($message) use ($data){
+            $message->from($data['email']);
+            $message->to('test@gmai.com');
+            $message->subject($data['message']);
+        });
+
+        return redirect()->back()->with('success', 'Your message has been sent!');
+    }
 }
