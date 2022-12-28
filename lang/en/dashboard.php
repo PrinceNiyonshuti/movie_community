@@ -5,4 +5,6 @@ return [
     'add_movie' => 'Add Movie',
     'genres' => 'Genres',
     'favorite_movies' => 'Favorite movies',
+    'others' => 'Others',
+    'settings' => 'Settings',
 ];
