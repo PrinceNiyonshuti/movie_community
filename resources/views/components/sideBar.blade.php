@@ -12,7 +12,7 @@
         <div class="user-fav">
             <p>{{ __('dashboard.account_details') }}</p>
             <ul>
-                <li class="{{ request()->is('account') ? 'active' : '' }}"><a href="/account">Dashboard</a></li>
+                <li class="{{ request()->is('account') ? 'active' : '' }}"><a href="/account">{{ __('dashboard.dashboard') }}</a></li>
                 <li class="{{ request()->is('movie') ? 'active' : '' }}"><a href="/movie">Add Movie</a></li>
                 @can('Admin')
                 <li class="{{ request()->is('genre') ? 'active' : '' }}"><a href="/genre">Genres</a></li>
