@@ -17,7 +17,7 @@
                 @can('Admin')
                 <li class="{{ request()->is('genre') ? 'active' : '' }}"><a href="/genre">{{ __('dashboard.genres') }}</a></li>
                 @endcan
-                <li class="{{ request()->is('favorite') ? 'active' : '' }}"><a href="/favorites">Favorite movies</a></li>
+                <li class="{{ request()->is('favorite') ? 'active' : '' }}"><a href="/favorites">{{ __('dashboard.favorite_movies') }}</a></li>
             </ul>
         </div>
         <div class="user-fav">
