@@ -24,7 +24,7 @@
             <p>{{ __('dashboard.others') }}</p>
             <ul>
                 <li class="{{ request()->is('account/profile') ? 'active' : '' }}"><a href="/account/profile">{{ __('dashboard.settings') }}</a></li>
-                <li><a href="#">Log out</a></li>
+                <li><a href="#">{{ __('dashboard.log_out') }}</a></li>
             </ul>
         </div>
     </div>
