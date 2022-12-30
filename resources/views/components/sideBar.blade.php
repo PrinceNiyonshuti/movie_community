@@ -21,7 +21,7 @@
             </ul>
         </div>
         <div class="user-fav">
-            <p>Others</p>
+            <p>{{ __('dashboard.others') }}</p>
             <ul>
                 <li class="{{ request()->is('account/profile') ? 'active' : '' }}"><a href="/account/profile">Settings</a></li>
                 <li><a href="#">Log out</a></li>
