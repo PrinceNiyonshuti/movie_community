@@ -7,4 +7,5 @@ return [
     'favorite_movies' => 'Favorite movies',
     'others' => 'Others',
     'settings' => 'Settings',
+    'log_out' => 'Log out',
 ];
