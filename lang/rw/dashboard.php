@@ -7,4 +7,5 @@ return [
     'favorite_movies' => 'Filimi nkunda',
     'others' => 'ibindi',
     'settings' => 'Ibihindurwa',
+    'log_out' => 'Sohoka',
 ];
