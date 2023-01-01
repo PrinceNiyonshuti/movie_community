@@ -8,4 +8,5 @@ return [
     'others' => 'Others',
     'settings' => 'Settings',
     'log_out' => 'Log out',
+    'account_details' => 'Account Details',
 ];
