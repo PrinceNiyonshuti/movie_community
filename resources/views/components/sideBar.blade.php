@@ -10,21 +10,21 @@
             <a href="#" class="redbtn">{{ Auth::user()->username }}</a>
         </div>
         <div class="user-fav">
-            <p>Account Details</p>
+            <p>{{ __('dashboard.account_details') }}</p>
             <ul>
-                <li class="{{ request()->is('account') ? 'active' : '' }}"><a href="/account">Dashboard</a></li>
-                <li class="{{ request()->is('movie') ? 'active' : '' }}"><a href="/movie">Add Movie</a></li>
+                <li class="{{ request()->is('account') ? 'active' : '' }}"><a href="/account">{{ __('dashboard.dashboard') }}</a></li>
+                <li class="{{ request()->is('movie') ? 'active' : '' }}"><a href="/movie">{{ __('dashboard.add_movie') }}</a></li>
                 @can('Admin')
-                    <li class="{{ request()->is('genre') ? 'active' : '' }}"><a href="/genre">Genres</a></li>
+                <li class="{{ request()->is('genre') ? 'active' : '' }}"><a href="/genre">{{ __('dashboard.genres') }}</a></li>
                 @endcan
-                <li class="{{ request()->is('favorite') ? 'active' : '' }}"><a href="/favorites">Favorite movies</a></li>
+                <li class="{{ request()->is('favorite') ? 'active' : '' }}"><a href="/favorites">{{ __('dashboard.favorite_movies') }}</a></li>
             </ul>
         </div>
         <div class="user-fav">
-            <p>Others</p>
+            <p>{{ __('dashboard.others') }}</p>
             <ul>
-                <li class="{{ request()->is('account/profile') ? 'active' : '' }}"><a href="/account/profile">Settings</a></li>
-                <li><a href="#">Log out</a></li>
+                <li class="{{ request()->is('account/profile') ? 'active' : '' }}"><a href="/account/profile">{{ __('dashboard.settings') }}</a></li>
+                <li><a href="#">{{ __('dashboard.log_out') }}</a></li>
             </ul>
         </div>
     </div>
