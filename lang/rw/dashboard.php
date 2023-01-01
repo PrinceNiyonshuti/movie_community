@@ -8,4 +8,5 @@ return [
     'others' => 'ibindi',
     'settings' => 'Ibihindurwa',
     'log_out' => 'Sohoka',
+    'account_details' => 'Imyirondoro Ya Konti Yanjye',
 ];
